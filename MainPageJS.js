@@ -15,4 +15,10 @@ document.getElementById('show-projects').addEventListener('click', function() {
     
     // 프로젝트 목록을 표시합니다.
     projectList.style.display = 'block';
+    
+    // 페이지를 옆으로 슬라이드합니다.
+    window.scrollTo({
+        top: projectList.offsetTop,
+        behavior: 'smooth'
+    });
 });
