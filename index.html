@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>버튼 클릭 예제</title>
+    <title>나의 포트폴리오</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <button id="myButton">클릭하세요!</button>
+    <header>
+        <h1>안녕하세요, 저는 [당신의 이름]입니다.</h1>
+    </header>
 
-    <script>
-        document.getElementById('myButton').addEventListener('click', function() {
-            console.log('버튼이 클릭되었습니다!');
-        });
-    </script>
+    <section id="about-me">
+        <h2>소개</h2>
+        <p>여기에 자신에 대한 소개를 적어주세요.</p>
+    </section>
+
+    <section id="projects">
+        <h2>프로젝트</h2>
+        <p>여기에 프로젝트에 대한 설명을 적어주세요.</p>
+    </section>
+
+    <footer>
+        <p>연락처: [이메일 주소]</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
