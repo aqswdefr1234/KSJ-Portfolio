@@ -4,11 +4,11 @@ document.getElementById('show-projects').addEventListener('click', function() {
     // 프로젝트 정보를 추가합니다. 이 부분은 실제 프로젝트 정보로 대체해야 합니다.
     projectList.innerHTML = `
         <div class="project">
-            <img src="Images/BTCFutureNotificationIcon1019.png" alt="프로젝트 1 이미지">
+            <img src="ImagesFolder/BTCFutureNotificationIcon1019.png" alt="프로젝트 1 이미지">
             <p>프로젝트 1에 대한 설명</p>
         </div>
         <div class="project">
-            <img src="Images/MainScene.png" alt="프로젝트 2 이미지">
+            <img src="ImagesFolder/MainScene.png" alt="프로젝트 2 이미지">
             <p>프로젝트 2에 대한 설명</p>
         </div>
     `;
