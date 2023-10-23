@@ -1,9 +1,10 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
 }
 
 header {
-    background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
 }
@@ -12,12 +13,24 @@ section {
     margin: 20px 0;
 }
 
+button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 .project {
     margin: 20px 0;
 }
 
 footer {
-    background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
 }
