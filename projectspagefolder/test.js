@@ -3,13 +3,12 @@
 var txtContentElement = document.getElementById("txt-content");
 
 // Txt 파일을 읽는 함수
-function string[] readTxtFile(count, txtOrder, FilePath) {
+function readTxtFile(count, txtOrder, FilePath) {
     fetch(FilePath)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            return response.text();
         })
         .then(txtContent => {
             // 가져온 txt 내용을 HTML 요소에 추가
