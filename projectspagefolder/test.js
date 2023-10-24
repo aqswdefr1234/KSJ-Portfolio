@@ -44,6 +44,7 @@ function readAllTxtFilesInTopFolder() {
                 let allFilled = txtOrder.every(value => value !== "");
                 
                 if (allFilled == true || count >= 30) {//15초
+                    console.log(txtOrder);
                     clearInterval(intervalId);
                 }
             }, 500);
