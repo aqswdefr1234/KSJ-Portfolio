@@ -28,8 +28,9 @@ function readAllTxtFilesInTopFolder(topFolder) {
         .then(data => {
             // data는 상위 폴더 내의 내용을 나타냄
             // 이 내용을 기반으로 txt 파일을 읽음
+            console.log(data);
             var lines = data.split('\n');
-            console.log(lines);
+            
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
                 if (line.endsWith(".txt")) {
