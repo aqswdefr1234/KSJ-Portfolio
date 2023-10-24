@@ -21,20 +21,15 @@ function readTxtFile(FilePath) {
 }
 
 async function readAllTxtFilesInTopFolder() {
-    fetch("ProjectFolder.txt")
-        .then(response => response.text())
-        .then(data => {
-            // 이 내용을 기반으로 txt 파일을 읽음
-            var lines = data.split('\n');
-            console.log(lines);
-            for (var i = 0; i < lines.length; i++) {
-                var line = lines[i];
-                await readTxtFile(line + "/Explanation.txt");
-                }
-        })
-        .catch(error => {
-            console.error('Error fetching top folder:', error);
-        });
+    const response = await fetch("ProjectFolder.txt");
+    const data = await response.text();
+    // 이 내용을 기반으로 txt 파일을 읽음
+    var lines = data.split('\n');
+    console.log(lines);
+    for (var i = 0; i < lines.length; i++) {
+        var line = lines[i];
+        await readTxtFile(line + "/Explanation.txt");
+    }
 }
 // 최상위 폴더에서 시작
 readAllTxtFilesInTopFolder();    
