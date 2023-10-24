@@ -1,1 +1,1 @@
-이것은 txt 파일 읽기 Explanation.txt파일입니다.
+이것은 project1파일입니다.
