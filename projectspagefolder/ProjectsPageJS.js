@@ -21,7 +21,7 @@ function readTxtFile(txtFilePath) {
         });
 }
 function readAllTxtFilesInTopFolder(topFolder) {
-    fetch("test.txt")
+    fetch("projects1/test1.txt")
         .then(response => response.text())
         .then(data => {
             // data는 상위 폴더 내의 내용을 나타냄
