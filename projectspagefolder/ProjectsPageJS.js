@@ -20,8 +20,29 @@ function readTxtFile(txtFilePath) {
             console.error('Error fetching txt file:', error);
         });
 }
-
+function readAllTxtFilesInTopFolder(topFolder) {
+    fetch("project1/test1.txt")
+        .then(response => response.text())
+        .then(data => {
+            // data는 상위 폴더 내의 내용을 나타냄
+            // 이 내용을 기반으로 txt 파일을 읽음
+            console.log(data);
+            var lines = data.split('\n');
+            
+            for (var i = 0; i < lines.length; i++) {
+                var line = lines[i];
+                if (line.endsWith(".txt")) {
+                    // txt 파일인 경우 읽음
+                    readTxtFile(topFolder + line);
+                }
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching top folder:', error);
+        });
+}
 // 상위 폴더 내의 모든 txt 파일을 읽음
+/*
 function readAllTxtFilesInTopFolder(topFolder) {
     fetch(topFolder)
         .then(response => response.text())
@@ -43,6 +64,6 @@ function readAllTxtFilesInTopFolder(topFolder) {
             console.error('Error fetching top folder:', error);
         });
 }
-
+*/
 // 최상위 폴더에서 시작
 readAllTxtFilesInTopFolder(topFolder);    
