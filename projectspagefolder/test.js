@@ -12,7 +12,7 @@ function readTxtFile(index, txtOrder, FilePath) {
         })
         .then(txtContent => {
             // 가져온 txt 내용을 HTML 요소에 추가
-            txtOrder[index] = txtContent;
+            txtOrder[index] = txtContent.toString();
             console.log(txtContent)
             //txtContentElement.textContent += txtContent;
         })
