@@ -42,10 +42,10 @@ function readAllTxtFilesInTopFolder() {
             
                 // 원하는 조건에 도달하면 반복을 중지
                 let allFilled = txtOrder.every(value => value !== "");
-                if (allFilled == true) {//15초
+                /*if (allFilled == true) {//15초
                     console.log(txtOrder);
                     clearInterval(intervalId);
-                }
+                }*/
                 if (count >= 30) {//15초
                     console.log(txtOrder);
                     clearInterval(intervalId);
