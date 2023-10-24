@@ -1,4 +1,4 @@
-var topFolder = "/ProjectsPageFolder/"; // 실제 상위 폴더 경로로 변경하세요
+var topFolder = "/ProjectsPageFolder"; // 실제 상위 폴더 경로로 변경하세요
 
     // HTML 요소를 가져오기
     var txtContentElement = document.getElementById("txt-content");
@@ -33,7 +33,7 @@ var topFolder = "/ProjectsPageFolder/"; // 실제 상위 폴더 경로로 변경
                     var line = lines[i];
                     if (line.endsWith(".txt")) {
                         // txt 파일인 경우 읽음
-                        readTxtFile(topFolder + line);
+                        readTxtFile(topFolder + "/" + line);
                     }
                 }
             })
