@@ -3,26 +3,54 @@
 var txtContentElement = document.getElementById("txt-content");
 
 // Txt 파일을 읽는 함수
-async function readTxtFile(FilePath) {
-    const response = await fetch(FilePath);
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
-    const txtContent = await response.text();
-    // 가져온 txt 내용을 HTML 요소에 추가
-    txtContentElement.textContent += txtContent;
+function string[] readTxtFile(count, txtOrder, FilePath) {
+    fetch(FilePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(txtContent => {
+            // 가져온 txt 내용을 HTML 요소에 추가
+            txtOrder[count] = txtContent;
+            //txtContentElement.textContent += txtContent;
+        })
+        .catch(error => {
+            console.error('Error fetching txt file:', error);
+            txtOrder[count] = "error";
+        });
 }
 
-async function readAllTxtFilesInTopFolder() {
-    const response = await fetch("ProjectFolder.txt");
-    const data = await response.text();
-    // 이 내용을 기반으로 txt 파일을 읽음
-    var lines = data.split('\n');
-    console.log(lines);
-    for (var i = 0; i < lines.length; i++) {
-        var line = lines[i];
-        await readTxtFile(line + "/Explanation.txt");
-    }
+function readAllTxtFilesInTopFolder() {
+    fetch("ProjectFolder.txt")
+        .then(response => response.text())
+        .then(data => {
+            // 이 내용을 기반으로 txt 파일을 읽음
+            var lines = data.split('\n');
+            console.log(lines);
+            let txtOrder = new Array(lines.length).fill("");
+            for (var i = 0; i < lines.length; i++) {
+                var line = lines[i];
+                readTxtFile(i, txtOrder, line + "/Explanation.txt");
+                }
+            
+            let count = 0;
+            const intervalId = setInterval(() => {
+                console.log("반복 실행중: " + count);
+                count++;
+            
+                // 원하는 조건에 도달하면 반복을 중지
+                let allFilled = txtOrder.every(value => value !== "");
+                
+                if (allFilled == true || count >= 30) {//15초
+                    clearInterval(intervalId);
+                }
+            }, 500);
+        })
+        .catch(error => {
+            console.error('Error fetching top folder:', error);
+        });
 }
 // 최상위 폴더에서 시작
-readAllTxtFilesInTopFolder();    
+readAllTxtFilesInTopFolder();
