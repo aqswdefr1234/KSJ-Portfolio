@@ -9,6 +9,7 @@ function readTxtFile(index, txtOrder, FilePath) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
+            return response.text();
         })
         .then(txtContent => {
             // 가져온 txt 내용을 HTML 요소에 추가
