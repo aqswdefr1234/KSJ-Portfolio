@@ -29,7 +29,7 @@ function readAllTxtFilesInTopFolder(topFolder) {
             console.log(data);
            
             }
-        })
+        )
         .catch(error => {
             console.error('Error fetching top folder:', error);
         });
