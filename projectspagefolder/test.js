@@ -27,6 +27,7 @@ function readAllTxtFilesInTopFolder() {
         .then(data => {
             // 이 내용을 기반으로 txt 파일을 읽음
             var lines = data.split('\n');
+            lines = lines.filter(line => line !== "");
             console.log(lines);
             let txtOrder = new Array(lines.length).fill("");
             for (var i = 0; i < lines.length; i++) {
