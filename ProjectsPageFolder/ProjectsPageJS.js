@@ -1,4 +1,4 @@
-var topFolder = "/ProjectsPageFolder"; // 실제 상위 폴더 경로로 변경하세요. " / " 로 시작하면 루트 디렉토리부터시작하는 절대경로. " ./ " 는 현재 디렉토리인 상대경로
+var topFolder = "/ProjectsPageFolder/"; // 실제 상위 폴더 경로로 변경하세요. " / " 로 시작하면 루트 디렉토리부터시작하는 절대경로. " ./ " 는 현재 디렉토리인 상대경로
                                         // " ../ " 는 상위 폴더
     // HTML 요소를 가져오기
     var txtContentElement = document.getElementById("txt-content");
@@ -33,7 +33,7 @@ var topFolder = "/ProjectsPageFolder"; // 실제 상위 폴더 경로로 변경�
                     var line = lines[i];
                     if (line.endsWith(".txt")) {
                         // txt 파일인 경우 읽음
-                        readTxtFile(topFolder + "/" + line);
+                        readTxtFile(topFolder + line);
                     }
                 }
             })
