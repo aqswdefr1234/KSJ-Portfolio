@@ -29,11 +29,12 @@ var topFolder = "/ProjectsPageFolder/"; // 실제 상위 폴더 경로로 변경
                 // data는 상위 폴더 내의 내용을 나타냄
                 // 이 내용을 기반으로 txt 파일을 읽음
                 var lines = data.split('\n');
+                console.log(lines);
                 for (var i = 0; i < lines.length; i++) {
                     var line = lines[i];
                     if (line.endsWith(".txt")) {
                         // txt 파일인 경우 읽음
-                        readTxtFile(topFolder + line);
+                        readTxtFile(topFolder + line + "/");
                     }
                 }
             })
