@@ -1,7 +1,7 @@
 // " / " 로 시작하면 루트 디렉토리부터시작하는 절대경로. " ./ " 는 현재 디렉토리인 상대경로.  " ../ " 는 상위 폴더
 // HTML 요소를 가져오기
 var txtContentElement = document.getElementById("txt-content");
-
+let txtOrder;
 // Txt 파일을 읽는 함수
 function readTxtFile(index, txtOrder, FilePath) {
     fetch(FilePath)
@@ -29,7 +29,7 @@ function readAllTxtFilesInTopFolder() {
             var lines = data.split('\n');
             lines = lines.filter(line => line !== "");
             console.log(lines);
-            let txtOrder = new Array(lines.length).fill("");
+            txtOrder = new Array(lines.length).fill("");
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
                 readTxtFile(i, txtOrder, line + "/Explanation.txt");
