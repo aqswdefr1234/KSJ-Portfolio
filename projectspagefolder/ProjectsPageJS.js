@@ -36,6 +36,5 @@ function readAllTxtFilesInTopFolder() {
             console.error('Error fetching top folder:', error);
         });
 }
-*/
 // 최상위 폴더에서 시작
 readAllTxtFilesInTopFolder();    
