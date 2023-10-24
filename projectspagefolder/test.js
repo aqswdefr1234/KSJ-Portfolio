@@ -3,7 +3,7 @@
 var txtContentElement = document.getElementById("txt-content");
 
 // Txt 파일을 읽는 함수
-function readTxtFile(count, txtOrder, FilePath) {
+function readTxtFile(index, txtOrder, FilePath) {
     fetch(FilePath)
         .then(response => {
             if (!response.ok) {
@@ -12,12 +12,12 @@ function readTxtFile(count, txtOrder, FilePath) {
         })
         .then(txtContent => {
             // 가져온 txt 내용을 HTML 요소에 추가
-            txtOrder[count] = txtContent;
+            txtOrder[index] = txtContent;
             //txtContentElement.textContent += txtContent;
         })
         .catch(error => {
             console.error('Error fetching txt file:', error);
-            txtOrder[count] = "error";
+            txtOrder[index] = "error";
         });
 }
 
@@ -42,8 +42,11 @@ function readAllTxtFilesInTopFolder() {
             
                 // 원하는 조건에 도달하면 반복을 중지
                 let allFilled = txtOrder.every(value => value !== "");
-                
-                if (allFilled == true || count >= 30) {//15초
+                if (allFilled == true) {//15초
+                    console.log(txtOrder);
+                    clearInterval(intervalId);
+                }
+                if (count >= 30) {//15초
                     console.log(txtOrder);
                     clearInterval(intervalId);
                 }
