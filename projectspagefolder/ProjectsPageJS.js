@@ -31,7 +31,7 @@ function readAllTxtFilesInTopFolder() {
                 var line = lines[i];
                 readTxtFile(line + "/Explanation.txt");
                 }
-            }
+            })
         })
         .catch(error => {
             console.error('Error fetching top folder:', error);
