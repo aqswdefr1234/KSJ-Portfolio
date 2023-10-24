@@ -3,21 +3,14 @@
 var txtContentElement = document.getElementById("txt-content");
 
 // Txt 파일을 읽는 함수
-function readTxtFile(FilePath) {
-    fetch(FilePath)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(txtContent => {
-            // 가져온 txt 내용을 HTML 요소에 추가
-            txtContentElement.textContent += txtContent;
-        })
-        .catch(error => {
-            console.error('Error fetching txt file:', error);
-        });
+async function readTxtFile(FilePath) {
+    const response = await fetch(FilePath);
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    const txtContent = await response.text();
+    // 가져온 txt 내용을 HTML 요소에 추가
+    txtContentElement.textContent += txtContent;
 }
 
 async function readAllTxtFilesInTopFolder() {
