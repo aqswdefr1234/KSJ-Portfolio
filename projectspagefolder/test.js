@@ -90,7 +90,7 @@ function DivString(txtOrder, imageOrder)
     var divString = "";
     for(var i = 0; i < txtOrder.length; i++)
     {
-        if(txtOrder[i] !== "null" && imageOrder[i] !== "null")
+        if(txtOrder[i] !== "null" && imageOrder[i] !== "null")//
         {
             divString += `
                 <div class="white-block-with-shadow">
@@ -101,8 +101,6 @@ function DivString(txtOrder, imageOrder)
                         ${txtOrder[i]}
                     </div>
                 </div>
-                
-                `
         }
         else if(imageOrder[i] == "null")
         {
@@ -134,3 +132,13 @@ function DivString(txtOrder, imageOrder)
     
 // 최상위 폴더에서 시작
 readAllTxtFilesInTopFolder();
+/*
+justify-content: center;: 이 속성은 주 축(main axis)을 따라 flex 아이템들을 가운데에 배치하도록 지시합니다.
+align-items: center;: 이 속성은 교차 축(cross axis)을 따라 flex 아이템들을 가운데에 배치하도록 지시합니다.
+
+주축과 justify-content: Flexbox에서 주 축(main axis)의 기본 방향은 가로입니다.
+따라서 flex-direction 속성을 명시적으로 설정하지 않으면, 주 축은 가로 방향이 됩니다.
+justify-content: center; 속성은 주 축을 따라 flex 아이템들을 가운데에 배치하도록 지시합니다. 그래서 이 속성이 가로의 중앙으로 정렬됩니다.
+교차 축: 교차 축(cross axis)은 주 축과 직각으로 교차하는 축입니다. 즉, 주 축이 가로 방향이면 교차 축은 세로 방향이고,
+주 축이 세로 방향이면 교차 축은 가로 방향입니다. align-items 속성은 교차 축을 따라 flex 아이템들을 어떻게 배치할지를 결정합니다.
+*/
