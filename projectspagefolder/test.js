@@ -92,36 +92,36 @@ function DivString(txtOrder, imageOrder)
     {
         if(txtOrder[i] !== "null" && imageOrder[i] !== "null")
         {
-            divString += "
+            divString += `
                 <div style="display: flex; align-items: center;">
                     <div style="flex: 1;">
-                        <img src=`${imageOrder[i]}` />
+                        <img src=${imageOrder[i]} />
                     </div>
                     <div style="flex: 1; text-align: center;">
-                        `${txtOrder}`
+                        ${txtOrder}
                     </div>
                 </div>
-                "
+                `
         }
         else if(imageOrder[i] == "null")
         {
-            divString += "
+            divString += `
                 <div style="display: flex; align-items: center;">
                     <div style="flex: 1; text-align: center;">
-                        `${txtOrder}`
+                        ${txtOrder}
                     </div>
                 </div>
-                "
+                `
         }
         else if(txtOrder[i] == "null")
         {
-            divString += "
+            divString += `
                 <div style="display: flex; align-items: center;">
                     <div style="flex: 1;">
-                        <img src=`${imageOrder[i]}` />
+                        <img src=${imageOrder[i]} />
                     </div>
                 </div>
-                "
+                `
         }
     }
     txtContentElement.textContent = divString;
