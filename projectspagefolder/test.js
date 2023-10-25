@@ -95,7 +95,7 @@ function DivString(txtOrder, imageOrder)
             divString += `
                 <div style="display: flex; align-items: center;">
                     <div style="flex: 1;">
-                        <img src=${imageOrder[i]} />
+                        <img src=${imageOrder[i]} style="height: 100px; width: auto; object-fit: scale-down;"/>
                     </div>
                     <div style="flex: 1; text-align: center;">
                         ${txtOrder[i]}
