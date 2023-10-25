@@ -69,7 +69,7 @@ function readAllTxtFilesInTopFolder() {
                 // 원하는 조건에 도달하면 반복을 중지
                 var allTXTFilled = txtOrder.every(value => value !== "");
                 var allImageFilled = imageOrder.every(value => value !== "");
-                if (allFilled == true) {//15초
+                if (allTXTFilled == true && allImageFilled == true) {//15초
                     console.log(txtOrder);
                     DivString(txtOrder, imageOrder);
                     clearInterval(intervalId);
