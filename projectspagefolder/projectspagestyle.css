@@ -20,7 +20,6 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: black;
-    color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     height: auto; /* 추가된 속성 */
     margin: 20px auto;
@@ -29,12 +28,17 @@ h1 {
     border: 1px solid white; /* 윤곽선을 생성하는 속성 */
 }
 
-.white-block-with-shadow div {/*클래스 하위의 div*/
+.white-block-with-shadow div {/*클래스 하위의 div . 여기서는 박스 안의 이미지와 텍스트 상자 영역만 해당된다.*/
     justify-content: center;
     align-items: center;
-    color: black;
+}
+.white-block-with-shadow div div {/*클래스 하위의 div의 하위 div . 여기서는 이미지 특성과 텍스트 특성이 해당된다.*/
+    justify-content: center;
+    align-items: center;
+    color: white;
     padding: 10px;
 }
+
 
 footer {
     padding: 20px;
