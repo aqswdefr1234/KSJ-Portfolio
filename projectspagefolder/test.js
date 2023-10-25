@@ -124,7 +124,7 @@ function DivString(txtOrder, imageOrder)
                 `
         }
     }
-    txtContentElement.textContent = divString;
+    txtContentElement.innerHTML = divString;
 }
     
 // 최상위 폴더에서 시작
