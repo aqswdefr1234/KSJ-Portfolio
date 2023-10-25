@@ -17,6 +17,7 @@ h1 {
 
 .white-block-with-shadow {
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -35,3 +36,8 @@ footer {
     padding: 20px;
     text-align: center;
 }
+/*
+display: flex;: 이 속성은 HTML 요소를 flex 컨테이너로 만듭니다.
+Flex 컨테이너는 자식 요소들을 유연하게 배치하고 크기를 조절하는 데 도움이 됩니다.
+Flex 컨테이너 내의 자식 요소들은 flex 아이템이라고 부릅니다.
+*/
