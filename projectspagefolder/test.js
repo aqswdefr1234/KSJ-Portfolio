@@ -94,8 +94,12 @@ function DivString(txtOrder, imageOrder)
         {
             divString += `
                 <div class="white-block-with-shadow">
-                    <img src=${imageOrder[i]} style="height: 300px; width: auto; object-fit: scale-down;"/>
-                    ${txtOrder[i]}
+                    <div style="flex: 1;">
+                        <img src=${imageOrder[i]} style="height: 300px; width: auto; object-fit: scale-down;"/>
+                    </div>
+                    <div style="flex: 1;">
+                        ${txtOrder[i]}
+                    </div>
                 </div>
                 `
         }
@@ -103,10 +107,8 @@ function DivString(txtOrder, imageOrder)
         {
             divString += `
                 <div class="white-block-with-shadow">
-                    <div style="display: flex; align-items: center;">
-                        <div style="flex: 1; text-align: center;">
-                            ${txtOrder}
-                        </div>
+                    <div style="flex: 1;">
+                        ${txtOrder}
                     </div>
                 </div>
                 `
