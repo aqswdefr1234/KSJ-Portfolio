@@ -101,6 +101,7 @@ function DivString(txtOrder, imageOrder)
                         ${txtOrder[i]}
                     </div>
                 </div>
+                `
         }
         else if(imageOrder[i] == "null")
         {
@@ -112,7 +113,6 @@ function DivString(txtOrder, imageOrder)
                         </div>
                     </div>
                 </div>
-                
                 `
         }
         else if(txtOrder[i] == "null")
@@ -123,7 +123,6 @@ function DivString(txtOrder, imageOrder)
                         <img src=${imageOrder[i]} style="height: 300px; width: auto; object-fit: scale-down;"/>
                     </div>
                 </div>
-                
                 `
         }
     }
