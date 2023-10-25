@@ -93,7 +93,7 @@ function DivString(txtOrder, imageOrder)
         if(txtOrder[i] !== "null" && imageOrder[i] !== "null")
         {
             divString += `
-                <div style="display: flex; align-items: center;">
+                <div class="white-block-with-shadow">
                     <div style="flex: 1;">
                         <img src=${imageOrder[i]} style="height: 300px; width: auto; object-fit: scale-down;"/>
                     </div>
@@ -107,18 +107,20 @@ function DivString(txtOrder, imageOrder)
         else if(imageOrder[i] == "null")
         {
             divString += `
+            <div class="white-block-with-shadow">
                 <div style="display: flex; align-items: center;">
                     <div style="flex: 1; text-align: center;">
                         ${txtOrder}
                     </div>
                 </div>
+            </div>
                 
                 `
         }
         else if(txtOrder[i] == "null")
         {
             divString += `
-                <div style="display: flex; align-items: center;">
+                <div class="white-block-with-shadow">
                     <div style="flex: 1;">
                         <img src=${imageOrder[i]} style="height: 300px; width: auto; object-fit: scale-down;"/>
                     </div>
