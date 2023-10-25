@@ -22,7 +22,6 @@ h1 {
     background-color: black;
     color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    overflow: auto; /* 추가된 속성 */
     height: auto; /* 추가된 속성 */
     margin: 20px auto;
     width: 90%;
