@@ -2,7 +2,6 @@ body{
     min-height: 100vh;
     flex-direction: column;
     background-color: #000;/*배경색*/
-    color: #000;/*글자색*/
     height: auto;
 }
 
