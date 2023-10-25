@@ -88,7 +88,7 @@ function readAllTxtFilesInTopFolder() {
 function DivString(txtOrder, imageOrder)
 {
     let divString = "";
-    for(int i = 0; i < txtOrder.length; i++)
+    for(var i = 0; i < txtOrder.length; i++)
     {
         if(txtOrder[i] !== "null" && imageOrder[i] !== "null")
         {
