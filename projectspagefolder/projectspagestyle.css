@@ -10,6 +10,7 @@ body, html {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
+    overflow: auto;
 }
 
 h1 {
