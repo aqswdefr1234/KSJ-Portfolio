@@ -1,3 +1,2 @@
-projects1 BTCFutureNotificationIcon1019.png
-project2 MainScene.png
-
+projects1 project1Text.txt BTCFutureNotificationIcon1019.png
+project2 project2Text.txt MainScene.png
