@@ -10,7 +10,6 @@ body, html {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
-    overflow: auto;
 }
 
 h1 {
@@ -29,7 +28,7 @@ h1 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     overflow: auto; /* 추가된 속성 */
     height: auto; /* 추가된 속성 */
-    margin: 0 auto;
+    margin: 20px auto;
     width: 90%;
 }
 
