@@ -19,12 +19,15 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: black;
+    color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     overflow: auto; /* 추가된 속성 */
     height: auto; /* 추가된 속성 */
     margin: 20px auto;
     width: 90%;
+    border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
+    border: 1px solid white; /* 윤곽선을 생성하는 속성 */
 }
 
 .white-block-with-shadow div {/*클래스 하위의 div*/
