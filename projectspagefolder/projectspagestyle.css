@@ -1,5 +1,5 @@
 body{
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     flex-direction: column;
     background-color: #000;/*배경색*/
     color: #fff;
@@ -39,7 +39,7 @@ h1 {
     display: block;
     margin: auto;
     height: 700px;
-    width: auto;
+    /*width: auto;*/
 }
 
 footer {
