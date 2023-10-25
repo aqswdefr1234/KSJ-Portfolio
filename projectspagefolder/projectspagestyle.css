@@ -21,9 +21,12 @@ h1 {
     margin: 20px 0;
 }
 
-.project {
-    margin: 20px 0;
-}
+.white-block-with-shadow {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
 
 footer {
     padding: 20px;
