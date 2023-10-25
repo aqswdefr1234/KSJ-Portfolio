@@ -2,8 +2,10 @@
 // HTML 요소를 가져오기
 var txtContentElement = document.getElementById("txt-content");
 let txtOrder;
+let imageOrder;
 // Txt 파일을 읽는 함수
-function readTxtFile(index, txtOrder, FilePath) {
+function readTxtFile(index, txtOrder, FilePath) 
+{
     fetch(FilePath)
         .then(response => {
             if (!response.ok) {
@@ -13,7 +15,7 @@ function readTxtFile(index, txtOrder, FilePath) {
         })
         .then(txtContent => {
             // 가져온 txt 내용을 HTML 요소에 추가
-            txtOrder[index] = txtContent.toString();
+            txtOrder[index] = txtContent;
             console.log(txtContent)
             //txtContentElement.textContent += txtContent;
         })
@@ -22,7 +24,17 @@ function readTxtFile(index, txtOrder, FilePath) {
             txtOrder[index] = "error";
         });
 }
-
+function readImageFile(index, imageOrder, FilePath)
+{
+    if(FilePath !== "null")
+    {
+        imageOrder[index] = FilePath;
+    }
+    else
+    {
+        imageOrder[index] = "null";
+    }
+}
 function readAllTxtFilesInTopFolder() {
     fetch("ProjectFolder.txt")
         .then(response => response.text())
@@ -32,9 +44,12 @@ function readAllTxtFilesInTopFolder() {
             lines = lines.filter(line => line !== "");
             console.log(lines);
             txtOrder = new Array(lines.length).fill("");
+            imageOrder = new Array(lines.length).fill("");
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
-                readTxtFile(i, txtOrder, line + "/Explanation.txt");
+                line = line.split(" ");
+                readTxtFile(i, txtOrder, $"{line[0]}/{line[1]}");
+                readImageFile(i, imageOrder, $"{line[0]}/{line[2]}");
                 }
             
             let count = 0;
@@ -58,5 +73,46 @@ function readAllTxtFilesInTopFolder() {
             console.error('Error fetching top folder:', error);
         });
 }
+function DivString(txtOrder, imageOrder)
+{
+    let divString = "";
+    for(int i = 0; i < txtOrder.length; i++)
+    {
+        if(txtOrder[i] !== "null" && imageOrder[i] !== "null")
+        {
+            divString += "
+                <div style="display: flex; align-items: center;">
+                    <div style="flex: 1;">
+                        <img src=$"{imageOrder[i]}" />
+                    </div>
+                    <div style="flex: 1; text-align: center;">
+                        ${txtOrder}
+                    </div>
+                </div>
+                "
+        }
+        else if(imageOrder[i] == "null")
+        {
+            divString += "
+                <div style="display: flex; align-items: center;">
+                    <div style="flex: 1; text-align: center;">
+                        ${txtOrder}
+                    </div>
+                </div>
+                "
+        }
+        else if(txtOrder[i] == "null")
+        {
+            divString += "
+                <div style="display: flex; align-items: center;">
+                    <div style="flex: 1;">
+                        <img src=$"{imageOrder[i]}" />
+                    </div>
+                </div>
+                "
+        }
+    }
+}
+    
 // 최상위 폴더에서 시작
 readAllTxtFilesInTopFolder();
