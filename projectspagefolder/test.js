@@ -6,23 +6,30 @@ let imageOrder;
 // Txt 파일을 읽는 함수
 function readTxtFile(index, txtOrder, FilePath) 
 {
-    fetch(FilePath)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(txtContent => {
-            // 가져온 txt 내용을 HTML 요소에 추가
-            txtOrder[index] = txtContent;
-            console.log(txtContent)
-            //txtContentElement.textContent += txtContent;
-        })
-        .catch(error => {
-            console.error('Error fetching txt file:', error);
-            txtOrder[index] = "error";
-        });
+    if(FilePath !== "null")
+    {
+        fetch(FilePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(txtContent => {
+                // 가져온 txt 내용을 배열 요소에 추가
+                txtOrder[index] = txtContent;
+                console.log(txtContent)
+            })
+            .catch(error => {
+                console.error('Error fetching txt file:', error);
+                txtOrder[index] = "error";
+            });
+    }
+    else
+    {
+        txtOrder[index] = "null"
+    }
+    
 }
 function readImageFile(index, imageOrder, FilePath)
 {
@@ -58,13 +65,16 @@ function readAllTxtFilesInTopFolder() {
                 count++;
             
                 // 원하는 조건에 도달하면 반복을 중지
-                let allFilled = txtOrder.every(value => value !== "");
+                let allTXTFilled = txtOrder.every(value => value !== "");
+                let allImageFilled = imageOrder.every(value => value !== "");
                 if (allFilled == true) {//15초
                     console.log(txtOrder);
+                    DivString(txtOrder, imageOrder);
                     clearInterval(intervalId);
                 }
                 if (count >= 30) {//15초
                     console.log(txtOrder);
+                    txtContentElement.textContent = "Error";
                     clearInterval(intervalId);
                 }
             }, 500);
@@ -112,6 +122,7 @@ function DivString(txtOrder, imageOrder)
                 "
         }
     }
+    txtContentElement.textContent = divString;
 }
     
 // 최상위 폴더에서 시작
