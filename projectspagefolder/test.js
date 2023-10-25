@@ -98,7 +98,7 @@ function DivString(txtOrder, imageOrder)
                         <img src=${imageOrder[i]} />
                     </div>
                     <div style="flex: 1; text-align: center;">
-                        ${txtOrder}
+                        ${txtOrder[i]}
                     </div>
                 </div>
                 `
