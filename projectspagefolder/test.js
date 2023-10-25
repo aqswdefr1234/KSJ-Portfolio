@@ -105,13 +105,13 @@ function DivString(txtOrder, imageOrder)
         else if(imageOrder[i] == "null")
         {
             divString += `
-            <div class="white-block-with-shadow">
-                <div style="display: flex; align-items: center;">
-                    <div style="flex: 1; text-align: center;">
-                        ${txtOrder}
+                <div class="white-block-with-shadow">
+                    <div style="display: flex; align-items: center;">
+                        <div style="flex: 1; text-align: center;">
+                            ${txtOrder}
+                        </div>
                     </div>
                 </div>
-            </div>
                 
                 `
         }
