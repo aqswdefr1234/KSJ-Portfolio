@@ -6,7 +6,8 @@ let imageOrder;
 // Txt 파일을 읽는 함수
 function readTxtFile(index, txtOrder, FilePath) 
 {
-    if(FilePath !== "null")
+    var fileName = FilePath.split("/").pop()
+    if(fileName !== "null")
     {
         fetch(FilePath)
             .then(response => {
@@ -33,7 +34,8 @@ function readTxtFile(index, txtOrder, FilePath)
 }
 function readImageFile(index, imageOrder, FilePath)
 {
-    if(FilePath !== "null")
+    var fileName = FilePath.split("/").pop()
+    if(fileName !== "null")
     {
         imageOrder[index] = FilePath;
     }
@@ -55,8 +57,8 @@ function readAllTxtFilesInTopFolder() {
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
                 line = line.split(" ");
-                readTxtFile(i, txtOrder, $"{line[0]}/{line[1]}");
-                readImageFile(i, imageOrder, $"{line[0]}/{line[2]}");
+                readTxtFile(i, txtOrder, `${line[0]}/${line[1]}`);
+                readImageFile(i, imageOrder, `${line[0]}/${line[2]}`);
                 }
             
             let count = 0;
@@ -93,10 +95,10 @@ function DivString(txtOrder, imageOrder)
             divString += "
                 <div style="display: flex; align-items: center;">
                     <div style="flex: 1;">
-                        <img src=$"{imageOrder[i]}" />
+                        <img src=`${imageOrder[i]}` />
                     </div>
                     <div style="flex: 1; text-align: center;">
-                        ${txtOrder}
+                        `${txtOrder}`
                     </div>
                 </div>
                 "
@@ -106,7 +108,7 @@ function DivString(txtOrder, imageOrder)
             divString += "
                 <div style="display: flex; align-items: center;">
                     <div style="flex: 1; text-align: center;">
-                        ${txtOrder}
+                        `${txtOrder}`
                     </div>
                 </div>
                 "
@@ -116,7 +118,7 @@ function DivString(txtOrder, imageOrder)
             divString += "
                 <div style="display: flex; align-items: center;">
                     <div style="flex: 1;">
-                        <img src=$"{imageOrder[i]}" />
+                        <img src=`${imageOrder[i]}` />
                     </div>
                 </div>
                 "
