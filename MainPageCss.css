@@ -2,6 +2,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
 }
 
 header {
@@ -29,10 +35,6 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-}
-
-.project {
-    margin: 20px 0;
 }
 
 footer {
