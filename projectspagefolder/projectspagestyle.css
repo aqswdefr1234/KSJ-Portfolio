@@ -17,10 +17,6 @@ h1 {
     text-align: center;
 }
 
-#txt-content {
-    margin: 20px 0;
-}
-
 .white-block-with-shadow {
     display: flex;
     align-items: center;
