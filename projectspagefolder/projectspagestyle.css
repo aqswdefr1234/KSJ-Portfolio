@@ -21,7 +21,8 @@ h1 {
     align-items: center;
     background-color: black;
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
-    height: auto;
+    height: 700px;
+    min-height: 300px;
     margin: 20px auto;
     width: 90%;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
