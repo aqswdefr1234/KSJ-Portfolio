@@ -42,7 +42,7 @@ h1 {
     margin: auto;
     height: 450px;
     width: auto;
-    object-fit: cover; /* 이미지의 비율을 유지하면서, 컨테이너에 꽉 차도록 설정 */
+    /*object-fit: cover;  이미지의 비율을 유지하면서, 컨테이너에 꽉 차도록 설정 */
 }
 
 footer {
