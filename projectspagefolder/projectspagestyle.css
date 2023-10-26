@@ -20,7 +20,7 @@ h1 {
     justify-content: space-between;
     background-color: black;
     box-shadow: 5px 5px 5px rgba(201, 188, 70, 0.5);
-    height: 500px;
+    min-height: 500px;
     margin: 100px auto;
     width: 90%;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
