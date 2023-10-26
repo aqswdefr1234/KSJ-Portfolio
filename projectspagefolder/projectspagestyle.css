@@ -17,13 +17,11 @@ h1 {
 
 .white-block-with-shadow {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;/*가로로 영역 두개로 나눔*/
+    align-items: center;/*각각의 영역에 대해 수직방향으로 가운데 정렬시킴*/
     background-color: black;
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
-    height: auto;
-    min-height: 300px;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3);
+    height: 700px;
     margin: 20px auto;
     width: 90%;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
@@ -32,11 +30,11 @@ h1 {
 
 .white-block-with-shadow div {/*클래스 하위의 div . 여기서는 박스 안의 텍스트 특성이 해당된다.*/
     display: flex;/*이것을 적용해야 flex 컨테이너가 된다*/
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: center;*/
     color: white;
     padding: 10px;
-    height: 700px;
+    height: auto;
     width: auto;
 }
 .white-block-with-shadow div img{/*클래스 하위의 div의 하위 img . 여기서는 박스 안의 이미지 특성이 해당된다.*/
