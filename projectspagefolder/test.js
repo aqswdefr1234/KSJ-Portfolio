@@ -97,7 +97,7 @@ function DivString(txtOrder, imageOrder)
                     <div>
                         <img src=${imageOrder[i]}/>
                     </div>
-                    <div>
+                    <div style="overflow: auto;">//하위객체가 공간을 넘어가려고 하면 스크롤바생성
                         ${txtOrder[i]}
                     </div>
                 </div>
@@ -107,7 +107,7 @@ function DivString(txtOrder, imageOrder)
         {
             divString += `
                 <div class="white-block-with-shadow">
-                    <div>
+                    <div style="overflow: auto;">
                         ${txtOrder}
                     </div>
                 </div>
