@@ -25,7 +25,6 @@ h1 {
     width: 90%;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
     border: 2px solid rgb(201, 188, 70); /* 윤곽선을 생성하는 속성 */
-    
 }
 
 .white-block-with-shadow div {/*클래스 하위의 div . 여기서는 박스 안의 텍스트 특성이 해당된다.*/
@@ -37,6 +36,7 @@ h1 {
     padding: 10px;
     height: auto;
     width: auto;
+    overflow: hidden;
 }
 .white-block-with-shadow div img{/*클래스 하위의 div의 하위 img . 여기서는 박스 안의 이미지 특성이 해당된다.*/
     display: block;
