@@ -18,7 +18,7 @@ function readTxtFile(index, txtOrder, FilePath)
             })
             .then(txtContent => {
                 // 가져온 txt 내용을 배열 요소에 추가
-                txtOrder[index] = txtContent;
+                txtOrder[index] = txtContent.replace(/\n/g, '<br>');//줄바꿈문자(\n)를 문자열전체(/g)에서 <br>로 교체
                 console.log(txtContent)
             })
             .catch(error => {
