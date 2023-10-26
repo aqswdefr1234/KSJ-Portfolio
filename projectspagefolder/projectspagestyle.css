@@ -17,6 +17,7 @@ h1 {
 
 .white-block-with-shadow {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
