@@ -37,7 +37,6 @@ h1 {
     padding: 10px;
     height: auto;
     width: auto;
-    overflow: 100vh;/*하위객체가 공간을 넘어가려고 하면 스크롤바생성*/
 }
 .white-block-with-shadow div img{/*클래스 하위의 div의 하위 img . 여기서는 박스 안의 이미지 특성이 해당된다.*/
     display: block;
