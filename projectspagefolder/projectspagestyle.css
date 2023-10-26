@@ -12,7 +12,7 @@ h1 {
 }
 
 #txt-content {
-    margin: 20px 0;
+    margin: 50px 0;
 }
 
 .white-block-with-shadow {
@@ -21,7 +21,7 @@ h1 {
     align-items: center;
     background-color: black;
     box-shadow: 10px 10px rgba(255, 255, 255, 0.9);
-    height: 700px;
+    height: 500px;
     margin: 20px auto;
     width: 90%;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
