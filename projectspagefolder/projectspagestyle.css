@@ -7,7 +7,7 @@ body{
 }
 
 h1 {
-    padding: 20px;
+    padding: 100px;
     text-align: center;
 }
 
@@ -29,7 +29,7 @@ h1 {
 }
 
 .white-block-with-shadow div {/*클래스 하위의 div . 여기서는 박스 안의 텍스트 특성이 해당된다.*/
-    display: flex 1;/*이것을 적용해야 flex 컨테이너가 된다*/
+    flex: 1 0 auto;/*이것을 적용해야 flex 컨테이너가 된다*/
     justify-content: center;
     align-items: center;
     color: white;
