@@ -17,8 +17,8 @@ h1 {
 
 .white-block-with-shadow {
     display: flex;
-    justify-content: space-between;/*가로로 영역 두개로 나눔*/
-    align-items: center;/*각각의 영역에 대해 수직방향으로 가운데 정렬시킴*/
+    justify-content: center;
+    align-items: center;
     background-color: black;
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3);
     height: 700px;
