@@ -94,10 +94,10 @@ function DivString(txtOrder, imageOrder)
         {
             divString += `
                 <div class="white-block-with-shadow">
-                    <div style="flex: 1;">
+                    <div>
                         <img src=${imageOrder[i]}/>
                     </div>
-                    <div style="flex: 1;">
+                    <div>
                         ${txtOrder[i]}
                     </div>
                 </div>
@@ -107,7 +107,7 @@ function DivString(txtOrder, imageOrder)
         {
             divString += `
                 <div class="white-block-with-shadow">
-                    <div style="flex: 1;">
+                    <div>
                         ${txtOrder}
                     </div>
                 </div>
@@ -117,7 +117,7 @@ function DivString(txtOrder, imageOrder)
         {
             divString += `
                 <div class="white-block-with-shadow">
-                    <div style="flex: 1;">
+                    <div>
                         <img src=${imageOrder[i]}/>
                     </div>
                 </div>
