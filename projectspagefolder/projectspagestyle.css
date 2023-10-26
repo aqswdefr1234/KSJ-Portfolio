@@ -20,7 +20,7 @@ h1 {
     justify-content: space-between;
     background-color: black;
     box-shadow: 5px 5px 5px rgba(201, 188, 70, 0.5);
-    min-height: 500px;
+    height: 500px;
     margin: 100px auto;
     width: 90%;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
@@ -35,7 +35,7 @@ h1 {
     align-items: center;
     color: white;
     padding: 10px;
-    height: auto;
+    height: 100%;
     width: auto;
     overflow: auto;/*하위객체가 공간을 넘어가려고 하면 스크롤바생성*/
 }
