@@ -10,18 +10,18 @@ h1 {
     padding: 100px;
     text-align: center;
 }
-
+/*
 #txt-content {
     margin: 50px 0;
 }
-
+*/
 .white-block-with-shadow {
     display: flex;
     justify-content: space-between;
     background-color: black;
     box-shadow: 5px 5px 5px rgba(255, 255, 0, 0.5);
     height: 500px;
-    margin: 20px auto;
+    margin: 100px auto;
     width: 90%;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
     border: 2px solid yellow; /* 윤곽선을 생성하는 속성 */
