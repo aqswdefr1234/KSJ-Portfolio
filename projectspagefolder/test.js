@@ -98,9 +98,7 @@ function DivString(txtOrder, imageOrder)
                         <img src=${imageOrder[i]}/>
                     </div>
                     <div>
-                        <div style="overflow: auto;">
-                            ${txtOrder[i]}
-                        </div>
+                        ${txtOrder[i]}
                     </div>
                 </div>
                 `
