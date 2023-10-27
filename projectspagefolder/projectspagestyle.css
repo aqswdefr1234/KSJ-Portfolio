@@ -21,7 +21,7 @@ h1 {
     background-color: black;
     box-shadow: 5px 5px 5px rgba(201, 188, 70, 0.5);
     height: 500px;
-    margin: 30px auto;
+    margin: 20px auto;
     width: 90%;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
     border: 2px solid rgb(201, 188, 70); /* 윤곽선을 생성하는 속성 */
