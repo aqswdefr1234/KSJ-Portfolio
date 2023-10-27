@@ -132,7 +132,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
             var url = linkUrlOrder[i].split(",");// , 없을 경우 첫번째 요소로 문자열이 배정된다.
             divString += "
                 <div class="link-icon">
-                "
+                ";
             for(var j = 0; j < url.length; j++)
             {
                 
@@ -172,7 +172,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
             }
             divString += "
                 </div>
-                "
+                ";
         }
     }
     txtContentElement.innerHTML = divString;
