@@ -129,7 +129,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
 
         if(linkUrlOrder[i] !== "null")//null값이 아닌경우 링크 이미지 삽
         {
-            var url = linkUrlOrder[i].split(",")// , 없을 경우 첫번째 요소로 문자열이 배정된다.
+            var url = linkUrlOrder[i].split(",");// , 없을 경우 첫번째 요소로 문자열이 배정된다.
             for(var i = 0; i < url.length; i++)
             {
                 if(url[i].includes("GitHub:"))
