@@ -142,11 +142,11 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 }
                 else if(url[i].includes("Tistory:"))
                 {
-                    divString += '
+                    divString += `
                         <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\Tistory_Icon.png">
                         </a>
-                        ';
+                        `;
                 }
                 else if(url[i].includes("YouTube:"))
                 {
