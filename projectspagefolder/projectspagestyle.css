@@ -46,11 +46,14 @@ h1 {
     /*object-fit: cover;  이미지의 비율을 유지하면서, 컨테이너에 꽉 차도록 설정 */
 }
 .link-icon{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 30px;
+    width: 90%;
     margin: 50px auto;
 }
-.link-icon img{
-    float: right;
-}
+
 footer {
     padding: 20px;
     text-align: center;
