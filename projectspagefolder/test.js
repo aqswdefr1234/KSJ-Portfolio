@@ -136,7 +136,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 {
                     divString += `
                         <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
-        	                <img src="LinkIcon\GitHub_Icon.png">
+        	                <img src="LinkIcon/GitHub_Icon.png">
                         </a>
                         `;
                 }
@@ -144,7 +144,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 {
                     divString += `
                         <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
-        	                <img src="LinkIcon\Tistory_Icon.png">
+        	                <img src="LinkIcon/Tistory_Icon.png">
                         </a>
                         `;
                 }
@@ -152,7 +152,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 {
                     divString += `
                         <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
-        	                <img src="LinkIcon\YouTube_Icon.png">
+        	                <img src="LinkIcon/YouTube_Icon.png">
                         </a>
                         `;
                 }
@@ -160,7 +160,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 {
                     divString += `
                         <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
-        	                <img src="LinkIcon\Etc_Icon.png">
+        	                <img src="LinkIcon/Etc_Icon.png">
                         </a>
                         `;
                 }
