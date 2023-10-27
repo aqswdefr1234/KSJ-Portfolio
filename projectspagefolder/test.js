@@ -135,7 +135,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 if(url[i].includes("GitHub:"))
                 {
                     divString += `
-                        <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+                        <a href="${url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\GitHub_Icon.png">
                         </a>
                         `;
@@ -143,7 +143,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 else if(url[i].includes("Tistory:"))
                 {
                     divString += `
-                        <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+                        <a href="${url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\Tistory_Icon.png">
                         </a>
                         `;
@@ -151,7 +151,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 else if(url[i].includes("YouTube:"))
                 {
                     divString += `
-                        <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+                        <a href="${url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\YouTube_Icon.png">
                         </a>
                         `;
@@ -159,7 +159,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 else
                 {
                     divString += `
-                        <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+                        <a href="${url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\Etc_Icon.png">
                         </a>
                         `;
