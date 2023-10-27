@@ -53,7 +53,10 @@ h1 {
     width: 90%;
     margin-bottom: 50px;
 }
-
+.link-icon a{
+    margin-right: 10px;
+    margin-left: 10px;
+}
 footer {
     padding: 20px;
     text-align: center;
