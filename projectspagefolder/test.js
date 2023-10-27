@@ -3,6 +3,7 @@
 var txtContentElement = document.getElementById("txt-content");
 var txtOrder;
 var imageOrder;
+var linkUrlOrder;
 // Txt 파일을 읽는 함수
 function readTxtFile(index, txtOrder, FilePath) 
 {
@@ -54,9 +55,11 @@ function readAllTxtFilesInTopFolder() {
             console.log(lines);
             txtOrder = new Array(lines.length).fill("");
             imageOrder = new Array(lines.length).fill("");
+            linkUrlOrder = new Array(lines.length).fill("");//여기에는 굳이 fill 안붙여도되지만 일관성을 위해 붙여준다.
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
                 line = line.split(" ");
+                linkUrlOrder[i] = line[3];//ex, GitHub:www.github.com,YouTube:www.youtube.com,Tistory:www.tistory.com 공백없어야함
                 readTxtFile(i, txtOrder, `${line[0]}/${line[1]}`);
                 readImageFile(i, imageOrder, `${line[0]}/${line[2]}`);
                 }
@@ -71,7 +74,7 @@ function readAllTxtFilesInTopFolder() {
                 var allImageFilled = imageOrder.every(value => value !== "");
                 if (allTXTFilled == true && allImageFilled == true) {//15초
                     console.log(txtOrder);
-                    DivString(txtOrder, imageOrder);
+                    DivString(txtOrder, imageOrder, linkUrlOrder);
                     clearInterval(intervalId);
                 }
                 if (count >= 30) {//15초
@@ -85,7 +88,7 @@ function readAllTxtFilesInTopFolder() {
             console.error('Error fetching top folder:', error);
         });
 }
-function DivString(txtOrder, imageOrder)
+function DivString(txtOrder, imageOrder, linkUrlOrder)
 {
     var divString = "";
     for(var i = 0; i < txtOrder.length; i++)
@@ -122,6 +125,48 @@ function DivString(txtOrder, imageOrder)
                     </div>
                 </div>
                 `
+        }
+
+        if(linkUrlOrder[i] !== "null")//null값이 아닌경우 링크 이미지 삽
+        {
+            var url = linkUrlOrder[i].split(",")// , 없을 경우 첫번째 요소로 문자열이 배정된다.
+            for(var i = 0; i < url.length; i++)
+            {
+                if(url[i].includes("GitHub:"))
+                {
+                    divString += '
+                        <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+        	                <img src="LinkIcon\GitHub_Icon.png">
+                        </a>
+                        '
+                }
+                else if(url[i].includes("Tistory:"))
+                {
+                    divString += '
+                        <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+        	                <img src="LinkIcon\Tistory_Icon.png">
+                        </a>
+                        '
+                }
+                else if(url[i].includes("YouTube:"))
+                {
+                    divString += '
+                        <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+        	                <img src="LinkIcon\YouTube_Icon.png">
+                        </a>
+                        '
+                }
+                else
+                {
+                    divString += '
+                        <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+        	                <img src="LinkIcon\Etc_Icon.png">
+                        </a>
+                        '
+                }
+
+            }
+            
         }
     }
     txtContentElement.innerHTML = divString;
