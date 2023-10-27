@@ -130,43 +130,49 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
         if(linkUrlOrder[i] !== "null")//null값이 아닌경우 링크 이미지 삽
         {
             var url = linkUrlOrder[i].split(",");// , 없을 경우 첫번째 요소로 문자열이 배정된다.
+            divString += "
+                <div class="link-icon">
+                "
             for(var j = 0; j < url.length; j++)
             {
+                
                 if(url[j].includes("GitHub:"))
                 {
                     divString += `
-                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" class="link-icon" target="_blank">
-        	                <img src="LinkIcon/GitHub_Icon.png" height="20" width="20">
-                        </a>
+                            <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
+            	                <img src="LinkIcon/GitHub_Icon.png" height="20" width="20">
+                            </a>
                         `;
                 }
                 else if(url[j].includes("Tistory:"))
                 {
                     divString += `
-                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" class="link-icon" target="_blank">
-        	                <img src="LinkIcon/Tistory_Icon.png" height="20" width="20">
-                        </a>
+                            <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
+            	                <img src="LinkIcon/Tistory_Icon.png" height="20" width="20">
+                            </a>
                         `;
                 }
                 else if(url[j].includes("YouTube:"))
                 {
                     divString += `
-                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" class="link-icon" target="_blank">
-        	                <img src="LinkIcon/YouTube_Icon.png" height="20" width="20">
-                        </a>
+                            <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
+            	                <img src="LinkIcon/YouTube_Icon.png" height="20" width="20">
+                            </a>
                         `;
                 }
                 else
                 {
                     divString += `
-                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" class="link-icon" target="_blank">
-        	                <img src="LinkIcon/Etc_Icon.png" height="20" width="20">
-                        </a>
+                            <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
+            	                <img src="LinkIcon/Etc_Icon.png" height="20" width="20">
+                            </a>
                         `;
                 }
 
             }
-            
+            divString += "
+                </div>
+                "
         }
     }
     txtContentElement.innerHTML = divString;
