@@ -130,28 +130,28 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
         if(linkUrlOrder[i] !== "null")//null값이 아닌경우 링크 이미지 삽
         {
             var url = linkUrlOrder[i].split(",");// , 없을 경우 첫번째 요소로 문자열이 배정된다.
-            for(var i = 0; i < url.length; i++)
+            for(var j = 0; j < url.length; j++)
             {
-                if(url[i].includes("GitHub:"))
+                if(url[j].includes("GitHub:"))
                 {
                     divString += `
-                        <a href="${url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\GitHub_Icon.png">
                         </a>
                         `;
                 }
-                else if(url[i].includes("Tistory:"))
+                else if(url[j].includes("Tistory:"))
                 {
                     divString += `
-                        <a href="${url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\Tistory_Icon.png">
                         </a>
                         `;
                 }
-                else if(url[i].includes("YouTube:"))
+                else if(url[j].includes("YouTube:"))
                 {
                     divString += `
-                        <a href="${url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\YouTube_Icon.png">
                         </a>
                         `;
@@ -159,7 +159,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 else
                 {
                     divString += `
-                        <a href="${url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
+                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\Etc_Icon.png">
                         </a>
                         `;
