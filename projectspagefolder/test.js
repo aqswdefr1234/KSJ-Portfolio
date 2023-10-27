@@ -135,32 +135,32 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 if(url[j].includes("GitHub:"))
                 {
                     divString += `
-                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
-        	                <img src="LinkIcon/GitHub_Icon.png">
+                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
+        	                <img src="LinkIcon/GitHub_Icon.png" height="20" width="20">
                         </a>
                         `;
                 }
                 else if(url[j].includes("Tistory:"))
                 {
                     divString += `
-                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
-        	                <img src="LinkIcon/Tistory_Icon.png">
+                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
+        	                <img src="LinkIcon/Tistory_Icon.png" height="20" width="20">
                         </a>
                         `;
                 }
                 else if(url[j].includes("YouTube:"))
                 {
                     divString += `
-                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
-        	                <img src="LinkIcon/YouTube_Icon.png">
+                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
+        	                <img src="LinkIcon/YouTube_Icon.png" height="20" width="20">
                         </a>
                         `;
                 }
                 else
                 {
                     divString += `
-                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" height="20" width="20" target="_blank">
-        	                <img src="LinkIcon/Etc_Icon.png">
+                        <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
+        	                <img src="LinkIcon/Etc_Icon.png" height="20" width="20">
                         </a>
                         `;
                 }
