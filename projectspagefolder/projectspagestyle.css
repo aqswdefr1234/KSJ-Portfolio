@@ -47,10 +47,10 @@ h1 {
 }
 .link-icon{
     display: flex;
-    width: 90%;
+    width: 30px;
     height = 30px;
-    justify-content: center;
-    align-items: right;
+    justify-content: right;
+    align-items: center;
     margin: 50px auto;
     
 }
