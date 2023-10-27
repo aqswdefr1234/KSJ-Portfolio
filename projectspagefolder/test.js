@@ -104,7 +104,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                         ${txtOrder[i]}
                     </div>
                 </div>
-                `
+                `;
         }
         else if(imageOrder[i] == "null")
         {
@@ -114,7 +114,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                         ${txtOrder}
                     </div>
                 </div>
-                `
+                `;
         }
         else if(txtOrder[i] == "null")
         {
@@ -124,7 +124,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                         <img src=${imageOrder[i]}/>
                     </div>
                 </div>
-                `
+                `;
         }
 
         if(linkUrlOrder[i] !== "null")//null값이 아닌경우 링크 이미지 삽
@@ -134,11 +134,11 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
             {
                 if(url[i].includes("GitHub:"))
                 {
-                    divString += '
+                    divString += `
                         <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\GitHub_Icon.png">
                         </a>
-                        '
+                        `;
                 }
                 else if(url[i].includes("Tistory:"))
                 {
@@ -146,23 +146,23 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                         <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\Tistory_Icon.png">
                         </a>
-                        '
+                        ';
                 }
                 else if(url[i].includes("YouTube:"))
                 {
-                    divString += '
+                    divString += `
                         <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\YouTube_Icon.png">
                         </a>
-                        '
+                        `;
                 }
                 else
                 {
-                    divString += '
+                    divString += `
                         <a href="{url[i].substring(url[i].indexOf(":") + 1)}" height="20" width="20" target="_blank">
         	                <img src="LinkIcon\Etc_Icon.png">
                         </a>
-                        '
+                        `;
                 }
 
             }
