@@ -1,6 +1,6 @@
 var txtContentElement_sub = document.getElementById("sub-content");
 var txtOrder_sub;
-var imageOrder;
+var imageOrder_sub;
 var linkUrlOrder;
 // Txt 파일을 읽는 함수
 function readTxtFile(index, txtOrder_sub, FilePath) 
@@ -31,16 +31,16 @@ function readTxtFile(index, txtOrder_sub, FilePath)
     }
     
 }
-function readImageFile(index, imageOrder, FilePath)
+function readImageFile(index, imageOrder_sub, FilePath)
 {
     var fileName = FilePath.split("/").pop()
     if(fileName !== "null")
     {
-        imageOrder[index] = FilePath;
+        imageOrder_sub[index] = FilePath;
     }
     else
     {
-        imageOrder[index] = "null";
+        imageOrder_sub[index] = "null";
     }
 }
 function readAllTxtFilesInTopFolder() {
@@ -52,14 +52,14 @@ function readAllTxtFilesInTopFolder() {
             lines = lines.filter(line => line !== "");
             console.log(lines);
             txtOrder_sub = new Array(lines.length).fill("");
-            imageOrder = new Array(lines.length).fill("");
+            imageOrder_sub = new Array(lines.length).fill("");
             linkUrlOrder = new Array(lines.length).fill("");//여기에는 굳이 fill 안붙여도되지만 일관성을 위해 붙여준다.
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
                 line = line.split(" ");
                 linkUrlOrder[i] = line[3];//ex, GitHub:www.github.com,YouTube:www.youtube.com,Tistory:www.tistory.com 공백없어야함
                 readTxtFile(i, txtOrder_sub, `${line[0]}/${line[1]}`);
-                readImageFile(i, imageOrder, `${line[0]}/${line[2]}`);
+                readImageFile(i, imageOrder_sub, `${line[0]}/${line[2]}`);
                 }
             
             var count = 0;
@@ -69,10 +69,10 @@ function readAllTxtFilesInTopFolder() {
             
                 // 원하는 조건에 도달하면 반복을 중지
                 var allTXTFilled = txtOrder_sub.every(value => value !== "");
-                var allImageFilled = imageOrder.every(value => value !== "");
+                var allImageFilled = imageOrder_sub.every(value => value !== "");
                 if (allTXTFilled == true && allImageFilled == true) {//15초
                     console.log(txtOrder_sub);
-                    DivString(txtOrder_sub, imageOrder, linkUrlOrder);
+                    DivString(txtOrder_sub, imageOrder_sub, linkUrlOrder);
                     clearInterval(intervalId);
                 }
                 if (count >= 30) {//15초
@@ -86,17 +86,17 @@ function readAllTxtFilesInTopFolder() {
             console.error('Error fetching top folder:', error);
         });
 }
-function DivString(txtOrder_sub, imageOrder, linkUrlOrder)
+function DivString(txtOrder_sub, imageOrder_sub, linkUrlOrder)
 {
     var divString = "";
     for(var i = 0; i < txtOrder_sub.length; i++)
     {
-        if(txtOrder_sub[i] !== "null" && imageOrder[i] !== "null")//
+        if(txtOrder_sub[i] !== "null" && imageOrder_sub[i] !== "null")//
         {
             divString += `
                 <div class="white-block-with-shadow">
                     <div>
-                        <img src=${imageOrder[i]}/>
+                        <img src=${imageOrder_sub[i]}/>
                     </div>
                     <div>
                         ${txtOrder_sub[i]}
@@ -104,7 +104,7 @@ function DivString(txtOrder_sub, imageOrder, linkUrlOrder)
                 </div>
                 `;
         }
-        else if(imageOrder[i] == "null")
+        else if(imageOrder_sub[i] == "null")
         {
             divString += `
                 <div class="white-block-with-shadow">
@@ -119,7 +119,7 @@ function DivString(txtOrder_sub, imageOrder, linkUrlOrder)
             divString += `
                 <div class="white-block-with-shadow">
                     <div>
-                        <img src=${imageOrder[i]}/>
+                        <img src=${imageOrder_sub[i]}/>
                     </div>
                 </div>
                 `;
