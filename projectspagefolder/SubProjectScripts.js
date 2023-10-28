@@ -72,7 +72,7 @@ function readAllTxtFilesInTopFolder_sub() {
                 var allImageFilled = imageOrder_sub.every(value => value !== "");
                 if (allTXTFilled == true && allImageFilled == true) {//15초
                     console.log(txtOrder_sub);
-                    DivString(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub);
+                    DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub);
                     clearInterval(intervalId);
                 }
                 if (count >= 30) {//15초
@@ -86,7 +86,7 @@ function readAllTxtFilesInTopFolder_sub() {
             console.error('Error fetching top folder:', error);
         });
 }
-function DivString(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
+function DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
 {
     var divString = "";
     for(var i = 0; i < txtOrder_sub.length; i++)
