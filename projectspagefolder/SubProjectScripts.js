@@ -43,7 +43,7 @@ function readImageFile_sub(index, imageOrder_sub, FilePath)
         imageOrder_sub[index] = "null";
     }
 }
-function readAllTxtFilesInTopFolder() {
+function readAllTxtFilesInTopFolder_sub() {
     fetch("SubProjectOrder.txt")
         .then(response => response.text())
         .then(data => {
@@ -177,7 +177,7 @@ function DivString(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
 }
     
 // 최상위 폴더에서 시작
-readAllTxtFilesInTopFolder();
+readAllTxtFilesInTopFolder_sub();
 /*
 justify-content: center;: 이 속성은 주 축(main axis)을 따라 flex 아이템들을 가운데에 배치하도록 지시합니다.
 align-items: center;: 이 속성은 교차 축(cross axis)을 따라 flex 아이템들을 가운데에 배치하도록 지시합니다.
