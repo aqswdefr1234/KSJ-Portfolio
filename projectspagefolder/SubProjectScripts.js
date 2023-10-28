@@ -31,7 +31,7 @@ function readTxtFile_sub(index, txtOrder_sub, FilePath)
     }
     
 }
-function readImageFile(index, imageOrder_sub, FilePath)
+function readImageFile_sub(index, imageOrder_sub, FilePath)
 {
     var fileName = FilePath.split("/").pop()
     if(fileName !== "null")
@@ -59,7 +59,7 @@ function readAllTxtFilesInTopFolder() {
                 line = line.split(" ");
                 linkUrlOrder_sub[i] = line[3];//ex, GitHub:www.github.com,YouTube:www.youtube.com,Tistory:www.tistory.com 공백없어야함
                 readTxtFile_sub(i, txtOrder_sub, `${line[0]}/${line[1]}`);
-                readImageFile(i, imageOrder_sub, `${line[0]}/${line[2]}`);
+                readImageFile_sub(i, imageOrder_sub, `${line[0]}/${line[2]}`);
                 }
             
             var count = 0;
