@@ -1,9 +1,9 @@
 var txtContentElement_sub = document.getElementById("sub-content");
-var txtOrder;
+var txtOrder_sub;
 var imageOrder;
 var linkUrlOrder;
 // Txt 파일을 읽는 함수
-function readTxtFile(index, txtOrder, FilePath) 
+function readTxtFile(index, txtOrder_sub, FilePath) 
 {
     var fileName = FilePath.split("/").pop()
     if(fileName !== "null")
@@ -17,17 +17,17 @@ function readTxtFile(index, txtOrder, FilePath)
             })
             .then(txtContent => {
                 // 가져온 txt 내용을 배열 요소에 추가
-                txtOrder[index] = txtContent.replace(/\n/g, '<br>');//줄바꿈문자(\n)를 문자열전체(/g)에서 <br>로 교체
+                txtOrder_sub[index] = txtContent.replace(/\n/g, '<br>');//줄바꿈문자(\n)를 문자열전체(/g)에서 <br>로 교체
                 console.log(txtContent)
             })
             .catch(error => {
                 console.error('Error fetching txt file:', error);
-                txtOrder[index] = "error";
+                txtOrder_sub[index] = "error";
             });
     }
     else
     {
-        txtOrder[index] = "null"
+        txtOrder_sub[index] = "null"
     }
     
 }
@@ -51,14 +51,14 @@ function readAllTxtFilesInTopFolder() {
             var lines = data.split('\n');
             lines = lines.filter(line => line !== "");
             console.log(lines);
-            txtOrder = new Array(lines.length).fill("");
+            txtOrder_sub = new Array(lines.length).fill("");
             imageOrder = new Array(lines.length).fill("");
             linkUrlOrder = new Array(lines.length).fill("");//여기에는 굳이 fill 안붙여도되지만 일관성을 위해 붙여준다.
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
                 line = line.split(" ");
                 linkUrlOrder[i] = line[3];//ex, GitHub:www.github.com,YouTube:www.youtube.com,Tistory:www.tistory.com 공백없어야함
-                readTxtFile(i, txtOrder, `${line[0]}/${line[1]}`);
+                readTxtFile(i, txtOrder_sub, `${line[0]}/${line[1]}`);
                 readImageFile(i, imageOrder, `${line[0]}/${line[2]}`);
                 }
             
@@ -68,15 +68,15 @@ function readAllTxtFilesInTopFolder() {
                 count++;
             
                 // 원하는 조건에 도달하면 반복을 중지
-                var allTXTFilled = txtOrder.every(value => value !== "");
+                var allTXTFilled = txtOrder_sub.every(value => value !== "");
                 var allImageFilled = imageOrder.every(value => value !== "");
                 if (allTXTFilled == true && allImageFilled == true) {//15초
-                    console.log(txtOrder);
-                    DivString(txtOrder, imageOrder, linkUrlOrder);
+                    console.log(txtOrder_sub);
+                    DivString(txtOrder_sub, imageOrder, linkUrlOrder);
                     clearInterval(intervalId);
                 }
                 if (count >= 30) {//15초
-                    console.log(txtOrder);
+                    console.log(txtOrder_sub);
                     txtContentElement.textContent = "Error";
                     clearInterval(intervalId);
                 }
@@ -86,12 +86,12 @@ function readAllTxtFilesInTopFolder() {
             console.error('Error fetching top folder:', error);
         });
 }
-function DivString(txtOrder, imageOrder, linkUrlOrder)
+function DivString(txtOrder_sub, imageOrder, linkUrlOrder)
 {
     var divString = "";
-    for(var i = 0; i < txtOrder.length; i++)
+    for(var i = 0; i < txtOrder_sub.length; i++)
     {
-        if(txtOrder[i] !== "null" && imageOrder[i] !== "null")//
+        if(txtOrder_sub[i] !== "null" && imageOrder[i] !== "null")//
         {
             divString += `
                 <div class="white-block-with-shadow">
@@ -99,7 +99,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                         <img src=${imageOrder[i]}/>
                     </div>
                     <div>
-                        ${txtOrder[i]}
+                        ${txtOrder_sub[i]}
                     </div>
                 </div>
                 `;
@@ -109,12 +109,12 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
             divString += `
                 <div class="white-block-with-shadow">
                     <div style="overflow: auto;">
-                        ${txtOrder}
+                        ${txtOrder_sub}
                     </div>
                 </div>
                 `;
         }
-        else if(txtOrder[i] == "null")
+        else if(txtOrder_sub[i] == "null")
         {
             divString += `
                 <div class="white-block-with-shadow">
