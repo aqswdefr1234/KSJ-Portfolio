@@ -46,7 +46,7 @@ function readImageFile(index, imageOrder, FilePath)
     }
 }
 function readAllTxtFilesInTopFolder() {
-    fetch("ProjectFolder.txt")
+    fetch("MainProjectOrder.txt")
         .then(response => response.text())
         .then(data => {
             // 이 내용을 기반으로 txt 파일을 읽음
