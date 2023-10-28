@@ -1,7 +1,7 @@
 var txtContentElement_sub = document.getElementById("sub-content");
 var txtOrder_sub;
 var imageOrder_sub;
-var linkUrlOrder;
+var linkUrlOrder_sub;
 // Txt 파일을 읽는 함수
 function readTxtFile(index, txtOrder_sub, FilePath) 
 {
@@ -53,11 +53,11 @@ function readAllTxtFilesInTopFolder() {
             console.log(lines);
             txtOrder_sub = new Array(lines.length).fill("");
             imageOrder_sub = new Array(lines.length).fill("");
-            linkUrlOrder = new Array(lines.length).fill("");//여기에는 굳이 fill 안붙여도되지만 일관성을 위해 붙여준다.
+            linkUrlOrder_sub = new Array(lines.length).fill("");//여기에는 굳이 fill 안붙여도되지만 일관성을 위해 붙여준다.
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
                 line = line.split(" ");
-                linkUrlOrder[i] = line[3];//ex, GitHub:www.github.com,YouTube:www.youtube.com,Tistory:www.tistory.com 공백없어야함
+                linkUrlOrder_sub[i] = line[3];//ex, GitHub:www.github.com,YouTube:www.youtube.com,Tistory:www.tistory.com 공백없어야함
                 readTxtFile(i, txtOrder_sub, `${line[0]}/${line[1]}`);
                 readImageFile(i, imageOrder_sub, `${line[0]}/${line[2]}`);
                 }
@@ -72,7 +72,7 @@ function readAllTxtFilesInTopFolder() {
                 var allImageFilled = imageOrder_sub.every(value => value !== "");
                 if (allTXTFilled == true && allImageFilled == true) {//15초
                     console.log(txtOrder_sub);
-                    DivString(txtOrder_sub, imageOrder_sub, linkUrlOrder);
+                    DivString(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub);
                     clearInterval(intervalId);
                 }
                 if (count >= 30) {//15초
@@ -86,7 +86,7 @@ function readAllTxtFilesInTopFolder() {
             console.error('Error fetching top folder:', error);
         });
 }
-function DivString(txtOrder_sub, imageOrder_sub, linkUrlOrder)
+function DivString(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
 {
     var divString = "";
     for(var i = 0; i < txtOrder_sub.length; i++)
@@ -125,9 +125,9 @@ function DivString(txtOrder_sub, imageOrder_sub, linkUrlOrder)
                 `;
         }
 
-        if(linkUrlOrder[i] !== "null")//null값이 아닌경우 링크 이미지 삽
+        if(linkUrlOrder_sub[i] !== "null")//null값이 아닌경우 링크 이미지 삽
         {
-            var url = linkUrlOrder[i].split(",");// , 없을 경우 첫번째 요소로 문자열이 배정된다.
+            var url = linkUrlOrder_sub[i].split(",");// , 없을 경우 첫번째 요소로 문자열이 배정된다.
             divString += `
                 <div class="link-icon">
                 `;
