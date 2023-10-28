@@ -1,4 +1,4 @@
-var txtContentElement = document.getElementById("sub-content");
+var txtContentElement_sub = document.getElementById("sub-content");
 var txtOrder;
 var imageOrder;
 var linkUrlOrder;
@@ -173,7 +173,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 `;
         }
     }
-    txtContentElement.innerHTML = divString;
+    txtContentElement_sub.innerHTML = divString;
 }
     
 // 최상위 폴더에서 시작
