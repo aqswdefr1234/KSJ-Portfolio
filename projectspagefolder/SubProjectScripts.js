@@ -1,4 +1,3 @@
-// " / " 로 시작하면 루트 디렉토리부터시작하는 절대경로. " ./ " 는 현재 디렉토리인 상대경로.  " ../ " 는 상위 폴더
 var txtContentElement = document.getElementById("sub-content");
 var txtOrder;
 var imageOrder;
