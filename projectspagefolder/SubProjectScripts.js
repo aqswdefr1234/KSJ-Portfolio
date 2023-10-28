@@ -3,7 +3,7 @@ var txtOrder_sub;
 var imageOrder_sub;
 var linkUrlOrder_sub;
 // Txt 파일을 읽는 함수
-function readTxtFile(index, txtOrder_sub, FilePath) 
+function readTxtFile_sub(index, txtOrder_sub, FilePath) 
 {
     var fileName = FilePath.split("/").pop()
     if(fileName !== "null")
@@ -58,7 +58,7 @@ function readAllTxtFilesInTopFolder() {
                 var line = lines[i];
                 line = line.split(" ");
                 linkUrlOrder_sub[i] = line[3];//ex, GitHub:www.github.com,YouTube:www.youtube.com,Tistory:www.tistory.com 공백없어야함
-                readTxtFile(i, txtOrder_sub, `${line[0]}/${line[1]}`);
+                readTxtFile_sub(i, txtOrder_sub, `${line[0]}/${line[1]}`);
                 readImageFile(i, imageOrder_sub, `${line[0]}/${line[2]}`);
                 }
             
