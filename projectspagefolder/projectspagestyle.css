@@ -35,10 +35,11 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 90%;
-    /*padding: 10%;*/
+    
     background-color: green;
 }
 .white-block-with-shadow div div{/*클래스 하위의 div의 하위 div. 텍스트 속성.*/
+    padding: 10px;
     display: flex;
     color: white;
     overflow: auto;
