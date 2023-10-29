@@ -27,6 +27,7 @@ h1 {
     margin: 20px auto;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
     border: 2px solid rgb(201, 188, 70); /* 윤곽선을 생성하는 속성 */
+    overflow: auto;
 }
 
 .white-block-with-shadow div {/*클래스 하위의 div . 여기서는 박스 안의 영역 특성에 해당된다.*/
@@ -36,12 +37,10 @@ h1 {
     align-items: center;
     max-height: 100%;
     background-color: yellow;
-    overflow: auto;
 }
 .white-block-with-shadow div div{/*클래스 하위의 div의 하위 div. 텍스트 속성.*/
     display: flex;
     color: white;
-    overflow: visible;
 }
 .white-block-with-shadow div img{/*클래스 하위의 div의 하위 img . 여기서는 박스 안의 이미지 특성이 해당된다.*/
     display: block;
