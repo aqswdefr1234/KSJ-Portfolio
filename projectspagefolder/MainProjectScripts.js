@@ -160,6 +160,14 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                             </a>
                         `;
                 }
+                else if(url[j].includes("GooglePlayStore:"))
+                {
+                    divString += `
+                            <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
+            	                <img src="LinkIcon/GooglePlayStore_Icon.png" height="20" width="20">
+                            </a>
+                        `;
+                }
                 else
                 {
                     divString += `
