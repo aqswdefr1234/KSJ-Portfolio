@@ -21,11 +21,12 @@ h1 {
     justify-content: space-between;
     background-color: black;
     box-shadow: 5px 5px 5px rgba(201, 188, 70, 0.5);
-    height: 50%;
+    height: 40%;
+    width: 90%;
     margin: 20px auto;
     padding: 10px;
-    width: 90%;
-    box-sizing: border-box;
+    
+    /*box-sizing: border-box;*/
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
     border: 2px solid rgb(201, 188, 70); /* 윤곽선을 생성하는 속성 */
 }
@@ -46,6 +47,8 @@ h1 {
     display: block;
     max-height: 90%;
     max-width: 90%;
+    min-height: 50%;
+    min-width: 50%;
     width: auto;
     height: auto;
 }
