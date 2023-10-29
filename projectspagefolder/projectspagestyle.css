@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     background-color: #000;/*배경색*/
     color: #fff;
-    height: auto;
+    /*height: auto;*/
     width: auto;
 }
 
