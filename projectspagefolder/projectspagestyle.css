@@ -4,6 +4,7 @@ body{
     background-color: #000;/*배경색*/
     color: #fff;
     height: auto;
+    width: auto;
 }
 
 h1 {
