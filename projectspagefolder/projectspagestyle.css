@@ -36,8 +36,9 @@ h1 {
     justify-content: center;
     align-items: center;
     color: white;
-    height: 480px;
+    height: 100%;
     width: 100%;
+    box-sizing: border-box;
     overflow: auto;
 }
 .white-block-with-shadow div img{/*클래스 하위의 div의 하위 img . 여기서는 박스 안의 이미지 특성이 해당된다.*/
