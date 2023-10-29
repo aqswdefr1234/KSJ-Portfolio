@@ -24,6 +24,7 @@ h1 {
     margin: 20px auto;
     padding: 10px;
     width: 90%;
+    box-sizing: border-box;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
     border: 2px solid rgb(201, 188, 70); /* 윤곽선을 생성하는 속성 */
 }
@@ -34,19 +35,21 @@ h1 {
     justify-content: center;
     align-items: center;
     color: white;
-    height: calc(100% - 20px)
+    height: 100%
     width: auto;
     object-fit: contain;
 }
 .white-block-with-shadow div div {/*클래스 하위의 div . 여기서는 박스 안의 텍스트 특성이 해당된다.*/
+    object-fit: contain;
     overflow: auto;
 }
 .white-block-with-shadow div img{/*클래스 하위의 div의 하위 img . 여기서는 박스 안의 이미지 특성이 해당된다.*/
     display: block;
-    max-height: 450px;
-    max-width: 700px;
+    /*max-height: 450px;
+    max-width: 700px;*/
     width: auto;
     height: auto;
+    object-fit: contain;
 }
 .link-icon{
     display: flex;
