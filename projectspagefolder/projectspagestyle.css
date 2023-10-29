@@ -24,6 +24,7 @@ h1 {
     margin: 20px auto;
     padding: 10px;
     width: 90%;
+    box-sizing: border-box;
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
     border: 2px solid rgb(201, 188, 70); /* 윤곽선을 생성하는 속성 */
 }
@@ -34,7 +35,7 @@ h1 {
     justify-content: center;
     align-items: center;
     color: white;
-    height: calc(100% - 50px);
+    height: 100%
     width: auto;
     object-fit: contain;
 }
