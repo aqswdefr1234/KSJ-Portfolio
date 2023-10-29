@@ -20,7 +20,7 @@ h1 {
     justify-content: space-between;
     background-color: black;
     box-shadow: 5px 5px 5px rgba(201, 188, 70, 0.5);
-    height: 500px;
+    height: 50%;
     margin: 20px auto;
     padding: 10px;
     width: 90%;
@@ -36,20 +36,17 @@ h1 {
     align-items: center;
     color: white;
     height: 100%
-    width: auto;
-    object-fit: contain;
+    width: 100%;
 }
 .white-block-with-shadow div div {/*클래스 하위의 div . 여기서는 박스 안의 텍스트 특성이 해당된다.*/
-    object-fit: contain;
     overflow: auto;
 }
 .white-block-with-shadow div img{/*클래스 하위의 div의 하위 img . 여기서는 박스 안의 이미지 특성이 해당된다.*/
     display: block;
-    /*max-height: 450px;
-    max-width: 700px;*/
+    max-height: 90%;
+    max-width: 90%;
     width: auto;
     height: auto;
-    object-fit: contain;
 }
 .link-icon{
     display: flex;
