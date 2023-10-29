@@ -42,8 +42,6 @@ h1 {
     display: block;
     margin: auto;
     max-height: 450px;
-    width: auto;
-    object-fit: contain;//원본 이미지 비율 사용
 }
 .link-icon{
     display: flex;
