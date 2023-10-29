@@ -19,13 +19,12 @@ h1 {
 .white-block-with-shadow {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: black;
     box-shadow: 5px 5px 5px rgba(201, 188, 70, 0.5);
-    height: 500px;
+    height: 90%;
     width: 90%;
     margin: 20px auto;
-    padding: 10px;
-    
     border-radius: 10px; /* 모서리를 둥글게 만드는 속성 */
     border: 2px solid rgb(201, 188, 70); /* 윤곽선을 생성하는 속성 */
 }
