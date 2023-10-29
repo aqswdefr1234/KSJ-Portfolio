@@ -99,7 +99,9 @@ function DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
                         <img src=${imageOrder_sub[i]}/>
                     </div>
                     <div>
-                        ${txtOrder_sub[i]}
+                        <div>
+                            ${txtOrder_sub[i]}
+                        </div>
                     </div>
                 </div>
                 `;
