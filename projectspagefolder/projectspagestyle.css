@@ -34,13 +34,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90%;
-    
-    background-color: green;
+    background-color: yellow;
 }
 .white-block-with-shadow div div{/*클래스 하위의 div의 하위 div. 텍스트 속성.*/
     display: flex;
-    height: auto;
+    
     color: white;
     overflow: auto;
 }
