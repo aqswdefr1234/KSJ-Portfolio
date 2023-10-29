@@ -37,7 +37,7 @@ h1 {
     align-items: center;
     height: 90%;
     width: 90%;
-    
+    background-color: green;
 }
 .white-block-with-shadow div div{/*클래스 하위의 div의 하위 div. 텍스트 속성.*/
     display: flex;
