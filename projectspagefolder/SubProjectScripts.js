@@ -99,9 +99,7 @@ function DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
                         <img src=${imageOrder_sub[i]}/>
                     </div>
                     <div>
-                        <div>
-                            ${txtOrder_sub[i]}
-                        </div>
+                        ${txtOrder_sub[i]}
                     </div>
                 </div>
                 `;
@@ -110,7 +108,7 @@ function DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
         {
             divString += `
                 <div class="white-block-with-shadow">
-                    <div style="overflow: auto;">
+                    <div>
                         ${txtOrder_sub}
                     </div>
                 </div>
