@@ -1,4 +1,4 @@
-project1 Introduce.txt BTCFutureNotificationIcon1019.png GitHub:https://github.com/aqswdefr1234/KSJ-Portfolio,YouTube:https://www.youtube.com/,Tistory:https://unity-practice.tistory.com/
+LuckyDayProject introduce.txt image.png GooglePlayStore:https://play.google.com/store/apps/details?id=com.LuckyYear.LuckyDay
 project2 project2Text.txt MainScene.png null
 project3 null nnnnnnn.ico null
 project4 project4Text.txt back.jpg null
