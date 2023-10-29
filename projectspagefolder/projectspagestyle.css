@@ -34,7 +34,7 @@ h1 {
     justify-content: center;
     align-items: center;
     color: white;
-    height: calc(100% - 10px);
+    height: calc(100% - 50px);
     width: auto;
     object-fit: contain;
 }
@@ -44,7 +44,7 @@ h1 {
 .white-block-with-shadow div img{/*클래스 하위의 div의 하위 img . 여기서는 박스 안의 이미지 특성이 해당된다.*/
     display: block;
     max-height: 450px;
-    max-width: 450px;
+    max-width: 700px;
     width: auto;
     height: auto;
 }
