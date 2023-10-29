@@ -34,6 +34,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 100%;
     background-color: yellow;
 }
 .white-block-with-shadow div div{/*클래스 하위의 div의 하위 div. 텍스트 속성.*/
