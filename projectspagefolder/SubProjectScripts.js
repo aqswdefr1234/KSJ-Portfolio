@@ -111,7 +111,9 @@ function DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
             divString += `
                 <div class="white-block-with-shadow">
                     <div>
-                        ${txtOrder_sub}
+                        <div>
+                            ${txtOrder_sub}
+                        </div>
                     </div>
                 </div>
                 `;
