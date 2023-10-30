@@ -63,7 +63,7 @@ function readAllTxtFilesInTopFolder_sub() {
                 }
             
             var count = 0;
-            const intervalId = setInterval(() => {
+            const intervalId_sub = setInterval(() => {
                 console.log("반복 실행중: " + count);
                 count++;
             
