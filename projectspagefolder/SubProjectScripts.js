@@ -140,7 +140,7 @@ function DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
                 {
                     divString += `
                             <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
-            	                <img src="LinkIcon/GitHub_Icon.png" height="20" width="20">
+            	                <img src="LinkIcon/GitHub_Icon.png" height="30" width="30">
                             </a>
                         `;
                 }
@@ -148,7 +148,7 @@ function DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
                 {
                     divString += `
                             <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
-            	                <img src="LinkIcon/Tistory_Icon.png" height="20" width="20">
+            	                <img src="LinkIcon/Tistory_Icon.png" height="30" width="30">
                             </a>
                         `;
                 }
@@ -156,7 +156,7 @@ function DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
                 {
                     divString += `
                             <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
-            	                <img src="LinkIcon/YouTube_Icon.png" height="20" width="20">
+            	                <img src="LinkIcon/YouTube_Icon.png" height="30" width="30">
                             </a>
                         `;
                 }
@@ -164,7 +164,7 @@ function DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
                 {
                     divString += `
                             <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
-            	                <img src="LinkIcon/GooglePlayStore_Icon.png" height="20" width="20">
+            	                <img src="LinkIcon/GooglePlayStore_Icon.png" height="30" width="30">
                             </a>
                         `;
                 }
@@ -172,7 +172,7 @@ function DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub)
                 {
                     divString += `
                             <a href="${url[j].substring(url[j].indexOf(":") + 1)}" target="_blank">
-            	                <img src="LinkIcon/Etc_Icon.png" height="20" width="20">
+            	                <img src="LinkIcon/Etc_Icon.png" height="30" width="30">
                             </a>
                         `;
                 }
