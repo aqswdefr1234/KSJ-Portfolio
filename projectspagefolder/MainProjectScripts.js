@@ -98,11 +98,11 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
             divString += `
                 <div class="white-block-with-shadow">
                     <div>
-                        <img src=${imageOrder_sub[i]}/>
+                        <img src=${imageOrder[i]}/>
                     </div>
                     <div>
                         <div>
-                            ${txtOrder_sub[i]}
+                            ${txtOrder[i]}
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 <div class="white-block-with-shadow">
                     <div>
                         <div>
-                            ${txtOrder_sub}
+                            ${txtOrder}
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
             divString += `
                 <div class="white-block-with-shadow">
                     <div>
-                        <img src=${imageOrder_sub[i]}/>
+                        <img src=${imageOrder[i]}/>
                     </div>
                 </div>
                 `;
