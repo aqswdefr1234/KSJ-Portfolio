@@ -73,12 +73,12 @@ function readAllTxtFilesInTopFolder_sub() {
                 if (allTXTFilled == true && allImageFilled == true) {//15초
                     console.log(txtOrder_sub);
                     DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub);
-                    clearInterval(intervalId);
+                    clearInterval(intervalId_sub);
                 }
                 if (count >= 30) {//15초
                     console.log(txtOrder_sub);
                     txtContentElement.textContent = "Error";
-                    clearInterval(intervalId);
+                    clearInterval(intervalId_sub);
                 }
             }, 500);
         })
