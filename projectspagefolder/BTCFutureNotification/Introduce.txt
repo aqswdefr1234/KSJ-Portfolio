@@ -1,3 +1,9 @@
 이 프로젝트는 비트코인 알림 서비스 앱입니다.
 안정적인 수익을 내기 위해서는 이동평균선, 볼린저밴드 등 다양한 지표활용이 필요합니다.
 이 앱은 자신이 설정한 지표가 목표에 도달하면 앱으로 알림을 보내주는 서비스를 제공합니다.
+
+주요기능
+-Firebase RealtimeDatabase 사용을 통한 알림 데이터 관리
+-Firebase Firestore 사용을 통한 유저 데이터 관리
+-Firebase Messaging을 이용한 백그라운드 메시지 전송
+-Firebase Auth와 Oauth를 이용한 이메일 로그인 및 Google 소셜 로그인
