@@ -63,7 +63,7 @@ function readAllTxtFilesInTopFolder_sub() {
                 }
             
             var count = 0;
-            const intervalId_sub = setInterval(() => {
+            const intervalId = setInterval(() => {
                 console.log("반복 실행중: " + count);
                 count++;
             
@@ -73,12 +73,12 @@ function readAllTxtFilesInTopFolder_sub() {
                 if (allTXTFilled == true && allImageFilled == true) {//15초
                     console.log(txtOrder_sub);
                     DivString_sub(txtOrder_sub, imageOrder_sub, linkUrlOrder_sub);
-                    clearInterval(intervalId_sub);
+                    clearInterval(intervalId);
                 }
                 if (count >= 30) {//15초
                     console.log(txtOrder_sub);
                     txtContentElement.textContent = "Error";
-                    clearInterval(intervalId_sub);
+                    clearInterval(intervalId);
                 }
             }, 500);
         })
