@@ -1,1 +1,2 @@
 BTCFutureNotification Introduce.txt GraphicPNG.png GitHub:https://github.com/aqswdefr1234/BTCFutureNotification/tree/main
+BTCFutureManagementProgram introduce.txt BTCFutureManagementProgram.png GitHub:https://github.com/aqswdefr1234/BTCFutureManagementProgram
