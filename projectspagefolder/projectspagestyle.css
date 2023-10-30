@@ -44,7 +44,7 @@ h1 {
 }
 .white-block-with-shadow div img{/*클래스 하위의 div의 하위 img . 여기서는 박스 안의 이미지 특성이 해당된다.*/
     display: block;
-    height: 70%;
+    height: 90%;
 }
 .link-icon{
     display: flex;
