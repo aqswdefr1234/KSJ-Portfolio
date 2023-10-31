@@ -1,6 +1,8 @@
 // " / " 로 시작하면 루트 디렉토리부터시작하는 절대경로. " ./ " 는 현재 디렉토리인 상대경로.  " ../ " 는 상위 폴더
 // HTML 요소를 가져오기
 var txtContentElement = document.getElementById("main-content");
+var txtContentElement_sub = document.getElementById("sub-content");
+var txtContentElement_team = document.getElementById("team-content");
 var txtOrder;
 var imageOrder;
 var linkUrlOrder;
@@ -45,8 +47,17 @@ function readImageFile(index, imageOrder, FilePath)
         imageOrder[index] = "null";
     }
 }
-function readAllTxtFilesInTopFolder() {
-    fetch("MainProjectOrder.txt")
+function readAllTxtFilesInTopFolder(content)
+{
+    var txtFileName = "";
+    if(content == "main-content")
+        txtFileName = "MainProjectOrder.txt";
+    else if(content == "sub-content")
+        txtFileName = "SubProjectOrder.txt";
+    else if(content == "team-content")
+        txtFileName = "TeamProjectOrder.txt";
+    
+    fetch(txtFileName)
         .then(response => response.text())
         .then(data => {
             // 이 내용을 기반으로 txt 파일을 읽음
@@ -74,7 +85,7 @@ function readAllTxtFilesInTopFolder() {
                 var allImageFilled = imageOrder.every(value => value !== "");
                 if (allTXTFilled == true && allImageFilled == true) {//15초
                     console.log(txtOrder);
-                    DivString(txtOrder, imageOrder, linkUrlOrder);
+                    DivString(content, txtOrder, imageOrder, linkUrlOrder);
                     clearInterval(intervalId);
                 }
                 if (count >= 30) {//15초
@@ -88,7 +99,7 @@ function readAllTxtFilesInTopFolder() {
             console.error('Error fetching top folder:', error);
         });
 }
-function DivString(txtOrder, imageOrder, linkUrlOrder)
+function DivString(content, txtOrder, imageOrder, linkUrlOrder)
 {
     var divString = "";
     for(var i = 0; i < txtOrder.length; i++)
@@ -187,11 +198,22 @@ function DivString(txtOrder, imageOrder, linkUrlOrder)
                 `;
         }
     }
-    txtContentElement.innerHTML = divString;
+    InnerHtml(content, divString)
 }
-    
+function InnerHtml(content, divString)
+{
+    if(content == "main-content")
+        txtContentElement.innerHTML = divString;
+    else if(content == "sub-content")
+        txtContentElement_sub.innerHTML = divString;
+    else if(content == "team-content")
+        txtContentElement_team.innerHTML = divString;
+}
 // 최상위 폴더에서 시작
-readAllTxtFilesInTopFolder();
+readAllTxtFilesInTopFolder("main-content");
+readAllTxtFilesInTopFolder("sub-content");
+readAllTxtFilesInTopFolder("team-content");
+
 /*
 justify-content: center;: 이 속성은 주 축(main axis)을 따라 flex 아이템들을 가운데에 배치하도록 지시합니다.
 align-items: center;: 이 속성은 교차 축(cross axis)을 따라 flex 아이템들을 가운데에 배치하도록 지시합니다.
