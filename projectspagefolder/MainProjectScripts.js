@@ -3,9 +3,7 @@
 var txtContentElement = document.getElementById("main-content");
 var txtContentElement_sub = document.getElementById("sub-content");
 var txtContentElement_team = document.getElementById("team-content");
-var txtOrder;
-var imageOrder;
-var linkUrlOrder;
+
 // Txt 파일을 읽는 함수
 function readTxtFile(index, txtOrder, FilePath) 
 {
@@ -49,6 +47,10 @@ function readImageFile(index, imageOrder, FilePath)
 }
 function readAllTxtFilesInTopFolder(content)
 {
+    var txtOrder;
+    var imageOrder;
+    var linkUrlOrder;
+    
     var txtFileName = "";
     if(content == "main-content")
         txtFileName = "MainProjectOrder.txt";
