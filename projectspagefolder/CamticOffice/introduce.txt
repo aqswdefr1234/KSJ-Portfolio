@@ -1,0 +1,6 @@
+Unity Netcode Relay를 이용한 멀티플레이.
+내가 현장 실습 하던 캠틱 항공우주사업부의 사무실.
+
+주요기능
+-Multiplayer
+-Netcode Relay
