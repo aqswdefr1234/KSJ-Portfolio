@@ -25,7 +25,8 @@ function ReadPyramin()
                 for(var z = 0; z < tech.length; z++)
                 {
                     divString += dict[tech[z]];
-                    console.log(tech[z]);
+                    if(dict[tech[z]] == "undefined")
+                        console.log(`${tech[z]} : ${dict[tech[z]]}`);
                 }
                 if(i !== floors.length - 1)
                     divString += "<br>";
