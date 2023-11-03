@@ -1,3 +1,3 @@
-DesktopGoogleLogin introduce.txt DesktopGoogleLogin.png GitHub:https://github.com/aqswdefr1234/DesktopGoogleLogin/tree/main
-GLTFImporter introduce.txt GLTFImporterScreenShot.png Tistory:https://unity-practice.tistory.com/35,GitHub:https://github.com/aqswdefr1234/GLTFImporter
-LuckyDayProject introduce.txt image.png GooglePlayStore:https://play.google.com/store/apps/details?id=com.LuckyYear.LuckyDay
+DesktopGoogleLogin^^^introduce.txt^^^DesktopGoogleLogin.png^^^GitHub:https://github.com/aqswdefr1234/DesktopGoogleLogin/tree/main
+GLTFImporter^^^introduce.txt^^^GLTFImporterScreenShot.png^^^Tistory:https://unity-practice.tistory.com/35,GitHub:https://github.com/aqswdefr1234/GLTFImporter
+LuckyDayProject^^^introduce.txt^^^image.png^^^GooglePlayStore:https://play.google.com/store/apps/details?id=com.LuckyYear.LuckyDay
