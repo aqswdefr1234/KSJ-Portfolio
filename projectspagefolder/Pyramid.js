@@ -14,7 +14,7 @@ function ReadPyramin()
             {
                 var dictKey = lines[j].substring(0, lines[j].indexOf(":"));// : 전까지
                 var dictValue = lines[j].substring(lines[j].indexOf(":") + 1);// : 후부터
-                dict[dictKey] = dictValue;
+                dict[dictKey] = dictValue.replace(/\r/g, '');
                 console.log(`${dictKey} : ${dict[dictKey]}`)
             }
             
@@ -24,7 +24,7 @@ function ReadPyramin()
                 var tech = techString.split(",");
                 for(var z = 0; z < tech.length; z++)
                 {
-                    divString += dict[tech[z]].replace(/\r/g, '');
+                    divString += dict[tech[z]];
                     console.log(tech[z]);
                 }
                 divString += "<br>";
