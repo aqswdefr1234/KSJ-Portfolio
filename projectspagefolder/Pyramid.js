@@ -29,7 +29,7 @@ function ReadPyramin()
                 divString += 
                     `
                     <div>
-                    '
+                    `
                 
                 for(var z = 0; z < tech.length; z++)
                 {
@@ -43,7 +43,7 @@ function ReadPyramin()
             divString += 
                     `
                     </div>
-                    '
+                    `
             pyramid.innerHTML = divString;
         })
         .catch(error => {
