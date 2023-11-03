@@ -24,7 +24,7 @@ function ReadPyramin()
                 var tech = techString.split(",");
                 for(var z = 0; z < tech.length; z++)
                 {
-                    divString += dict[tech[z]];
+                    divString += dict[tech[z]].replace(/\r/g, '');;
                     console.log(tech[z]);
                 }
                 divString += "<br>";
