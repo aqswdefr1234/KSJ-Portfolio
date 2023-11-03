@@ -25,6 +25,7 @@ function ReadPyramin()
                 console.log(`${floors[i]}`);
                 var techs = floors[i].substring(floors[i].indexOf(":") + 1);//기술스택이름
                 var tech = techs.split(",");
+                console.log(`${floors[i]} : ${tech}`);
                 for(var z = 0; z < tech.length; z++)
                 {
                     divString += dict[tech];
