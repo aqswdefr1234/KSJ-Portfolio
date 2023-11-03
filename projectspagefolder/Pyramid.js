@@ -8,7 +8,9 @@ function ReadPyramin()
             var divString = "";
             var dict = {};
             var lines = data.split('\n');
+            console.log(lines.length);
             lines = lines.filter(line => line !== "");
+            console.log(lines.length);
             var floors = lines[0].split("^^^");//첫번째 줄에는 층 정보 나옴
             //lines.shift();//첫번째 요소 제거 후, 한칸 씩 앞으로
             for(var j = 1; j < lines.length; j++)//첫번째 줄은 층에 대한 정보 이므로 제
