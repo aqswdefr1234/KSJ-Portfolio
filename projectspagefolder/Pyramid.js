@@ -25,12 +25,7 @@ function ReadPyramin()
                 for(var z = 0; z < tech.length; z++)
                 {
                     console.log(`${tech} : ${dict[tech]}`);
-                    divString += 
-                    `
-                    <div>
-                        ${dict[tech]}
-                    </div>
-                    `;
+                    divString += dict[tech[z]];
                 }
                 divString += "<br>";
             }
