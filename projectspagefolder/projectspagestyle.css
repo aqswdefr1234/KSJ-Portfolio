@@ -47,7 +47,7 @@ h1 {
     max-height: 450px;
     height: 100%; /* 높이를 브라우저 창에 맞게 100%로 설정 */
     width: 100%; /* 너비를 브라우저 창에 맞게 100%로 설정 */
-    object-fit: contain; /* 원본 비율 유지 */
+    object-fit: contain; /* 원본 비율 유지. 가로 세로 중 작은쪽이 기준이 된다. */
 }
 .link-icon{
     display: flex;
