@@ -23,6 +23,7 @@ function ReadPyramin()
             for(var i = 0; i < floors.length; i++)//층별로 쓰인 기술스택 이미지 주소찾기
             {
                 var tech = floors[i].substring(0, floors[i].indexOf(":"));//기술스택이름
+                console.log(tech)
                 divString += dict[tech];
                 divString += "<br>";
             }
