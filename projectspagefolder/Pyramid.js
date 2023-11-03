@@ -30,7 +30,7 @@ function ReadPyramin()
                 if(i !== floors.length - 1)
                     divString += "<br>";
             }
-            divString += "<div>"
+            divString += "</div>"
             console.log(dict);
             console.log(divString);
             pyramid.innerHTML = divString;
