@@ -15,9 +15,8 @@ function ReadPyramin()
                 var dictKey = lines[j].substring(0, lines[j].indexOf(":"));// : 전까지
                 var dictValue = lines[j].substring(lines[j].indexOf(":") + 1);// : 후부터
                 dict[dictKey] = dictValue.replace(/\r/g, '');
-                console.log(`${dictKey} : ${dict[dictKey]}`)
+                console.log(`${dictKey} : ${dict[dictKey]}`);
             }
-            divString += "<div>"
             for(var i = 0; i < floors.length; i++)//층별로 쓰인 기술스택 이미지 주소찾기
             {
                 var techString = floors[i].substring(floors[i].indexOf(":") + 1);//기술스택이름
@@ -31,7 +30,6 @@ function ReadPyramin()
                 if(i !== floors.length - 1)
                     divString += "<br>";
             }
-            divString += "</div>"
             console.log(dict);
             console.log(divString);
             pyramid.innerHTML = divString;
