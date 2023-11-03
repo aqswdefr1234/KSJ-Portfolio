@@ -29,7 +29,7 @@ function ReadPyramin()
                 }
                 divString += "<br>";
             }
-            console.log(dict["netlify"]);
+            console.log(dict);
             console.log(divString);
             pyramid.innerHTML = divString;
         })
