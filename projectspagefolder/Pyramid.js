@@ -2,7 +2,7 @@ var pyramid = document.getElementById("pyramid");
 
 function ReadPyramin()
 {
-    fetch(Pyramid.txt)
+    fetch("Pyramid.txt")
         .then(response => response.text())
         .then(data => {
             var divString = "";
