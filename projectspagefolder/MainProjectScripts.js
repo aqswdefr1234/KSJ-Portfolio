@@ -71,7 +71,7 @@ function readAllTxtFilesInTopFolder(content)
             linkUrlOrder = new Array(lines.length).fill("");//여기에는 굳이 fill 안붙여도되지만 일관성을 위해 붙여준다.
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
-                line = line.split(" ");
+                line = line.split("^^^");
                 linkUrlOrder[i] = line[3];//ex, GitHub:www.github.com,YouTube:www.youtube.com,Tistory:www.tistory.com 공백없어야함
                 readTxtFile(i, txtOrder, `${line[0]}/${line[1]}`);
                 readImageFile(i, imageOrder, `${line[0]}/${line[2]}`);
