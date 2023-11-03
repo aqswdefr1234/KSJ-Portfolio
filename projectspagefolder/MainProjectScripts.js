@@ -20,7 +20,6 @@ function readTxtFile(index, txtOrder, FilePath)
             .then(txtContent => {
                 // 가져온 txt 내용을 배열 요소에 추가
                 txtOrder[index] = txtContent.replace(/\n/g, '<br>');//줄바꿈문자(\n)를 문자열전체(/g)에서 <br>로 교체
-                console.log(txtContent)
             })
             .catch(error => {
                 console.error('Error fetching txt file:', error);
@@ -65,7 +64,6 @@ function readAllTxtFilesInTopFolder(content)
             // 이 내용을 기반으로 txt 파일을 읽음
             var lines = data.split('\n');
             lines = lines.filter(line => line !== "");
-            console.log(lines);
             txtOrder = new Array(lines.length).fill("");
             imageOrder = new Array(lines.length).fill("");
             linkUrlOrder = new Array(lines.length).fill("");//여기에는 굳이 fill 안붙여도되지만 일관성을 위해 붙여준다.
@@ -86,12 +84,10 @@ function readAllTxtFilesInTopFolder(content)
                 var allTXTFilled = txtOrder.every(value => value !== "");
                 var allImageFilled = imageOrder.every(value => value !== "");
                 if (allTXTFilled == true && allImageFilled == true) {//15초
-                    console.log(txtOrder);
                     DivString(content, txtOrder, imageOrder, linkUrlOrder);
                     clearInterval(intervalId);
                 }
                 if (count >= 30) {//15초
-                    console.log(txtOrder);
                     txtContentElement.textContent = "Error";
                     clearInterval(intervalId);
                 }
