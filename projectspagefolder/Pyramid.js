@@ -24,6 +24,7 @@ function ReadPyramin()
                 divString += dict[tech];
                 divString += "<br>";
             }
+            pyramid.innerHTML = divString;
         })
         .catch(error => {
             console.error('Error fetching top folder:', error);
