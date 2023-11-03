@@ -27,9 +27,10 @@ function ReadPyramin()
                     divString += dict[tech[z]];
                     console.log(tech[z]);
                 }
-                if(i !== floors.length - 1)
-                    divString += "<br>";
+                divString += "<br>";
             }
+            console.log(dict["netlify"]);
+            console.log(divString);
             pyramid.innerHTML = divString;
         })
         .catch(error => {
