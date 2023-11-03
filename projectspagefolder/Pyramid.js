@@ -16,6 +16,7 @@ function ReadPyramin()
             {
                 var dictKey = lines[j].substring(0, lines[j].indexOf(":"));// : 전까지
                 var dictValue = lines[j].substring(lines[j].indexOf(":") + 1);// : 후부터
+                console.log(`{dictKey} : {dictValue}`);
                 dict[dictKey] = dictValue;
             }
             
