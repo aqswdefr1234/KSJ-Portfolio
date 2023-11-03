@@ -1,2 +1,2 @@
-SmartPlant introduce.txt SmartPlant.png YouTube:https://www.youtube.com/watch?v=1xibo8yLdYE,Capston:https://linc.jbnu.ac.kr/history/index.php?cp_code=22051011083317&club_code=22051017453338&page=1
-Meta_eCommerce introduce.txt eCommerce.jpg Capston:https://linc.jbnu.ac.kr/history/index.php?cp_code=21091414192092&club_code=21092718014214
+SmartPlant introduce.txt SmartPlant.png YouTube:https://www.youtube.com/watch?v=1xibo8yLdYE,Capston:https://linc.jbnu.ac.kr/history/index.php?cp_code=22051011083317&club_code=22051017453338&page=1^^^Languages:python,php^^^Technologies:Apache,html
+Meta_eCommerce introduce.txt eCommerce.jpg Capston:https://linc.jbnu.ac.kr/history/index.php?cp_code=21091414192092&club_code=21092718014214^^^Languages:c#^^^Technologies:Unity
