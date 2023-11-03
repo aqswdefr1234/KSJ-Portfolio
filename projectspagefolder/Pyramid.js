@@ -24,10 +24,10 @@ function ReadPyramin()
                 var tech = techs.split(",");
                 for(var z = 0; z < tech.length; z++)
                 {
-                    console.log(`${tech} : ${dict[tech]}`);
                     divString += dict[tech[z]];
                 }
-                divString += "<br>";
+                if(i !== floors.length - 1)
+                    divString += "<br>";
             }
             pyramid.innerHTML = divString;
         })
