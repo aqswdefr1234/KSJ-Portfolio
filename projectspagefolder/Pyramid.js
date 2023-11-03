@@ -27,7 +27,8 @@ function ReadPyramin()
                     divString += dict[tech[z]];
                     console.log(tech[z]);
                 }
-                divString += "<br>";
+                if(i !== floors.length - 1)
+                    divString += "<br>";
             }
             console.log(dict);
             console.log(divString);
