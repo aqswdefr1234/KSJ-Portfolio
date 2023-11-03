@@ -29,3 +29,4 @@ function ReadPyramin()
             console.error('Error fetching top folder:', error);
         });
 }
+ReadPyramin();
