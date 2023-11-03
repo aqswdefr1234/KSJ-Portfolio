@@ -26,13 +26,24 @@ function ReadPyramin()
                 var techs = floors[i].substring(floors[i].indexOf(":") + 1);//기술스택이름
                 var tech = techs.split(",");
                 console.log(`${floors[i]} : ${tech}`);
+                divString += 
+                    `
+                    <div>
+                    '
+                
                 for(var z = 0; z < tech.length; z++)
                 {
                     divString += dict[tech];
-                    divString += " ";
+                    divString += 
+                    "
+                     ";
                 }
                 divString += "<br>";
             }
+            divString += 
+                    `
+                    </div>
+                    '
             pyramid.innerHTML = divString;
         })
         .catch(error => {
