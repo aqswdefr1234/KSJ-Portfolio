@@ -44,10 +44,9 @@ h1 {
 }
 .white-block-with-shadow div img{/*클래스 하위의 div의 하위 img . 여기서는 박스 안의 이미지 특성이 해당된다.*/
     display: block;
-    max-height: 400px;
-    max-width: 850px;
-    height: auto;
-    width: auto;
+    height: 75%; /* 높이를 브라우저 창에 맞게 100%로 설정 */
+    width: 100%; /* 너비를 브라우저 창에 맞게 100%로 설정 */
+    object-fit: contain; /* 원본 비율 유지 */
 }
 .link-icon{
     display: flex;
