@@ -13,7 +13,7 @@ async function ReadPyramin()
     {
         var dictKey = lines[j].substring(0, lines[j].indexOf(":"));// : 전까지
         var dictValue = lines[j].substring(lines[j].indexOf(":") + 1);// : 후부터
-        dict[dictKey] = dictValue.replace(/\r/g, '');
+        dict[dictKey] = dictValue.replace(/\r/g, '').replace(/\n/g, '');
         console.log(`${dictKey} : ${dict[dictKey]}`);
     }
     for(var i = 0; i < floors.length; i++)//층별로 쓰인 기술스택 이미지 주소찾기
