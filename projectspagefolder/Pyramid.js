@@ -22,11 +22,11 @@ function ReadPyramin()
             {
                 var techString = floors[i].substring(floors[i].indexOf(":") + 1);//기술스택이름
                 var tech = techString.split(",");
+                console.log(`tech의 길이 ${i}번째 : ${tech.length}`);
                 for(var z = 0; z < tech.length; z++)
                 {
+                    console.log(`${tech[z]} : ${dict[tech[z]]}`);
                     divString += dict[tech[z]];
-                    if(dict[tech[z]] == "undefined")
-                        console.log(`${tech[z]} : ${dict[tech[z]]}`);
                 }
                 if(i !== floors.length - 1)
                     divString += "<br>";
