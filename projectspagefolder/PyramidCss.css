@@ -1,37 +1,15 @@
-.pyramidArea {
-  margin: 0 auto;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid red;
-  position: relative;
-  background-image: url('your-image-url');
-  background-size: cover;
+.pyramidArea{ /* " . " 는 클래스 속성을 정의하고 " # " 은 id 속성을 정의한다.*/
+    display: block;
+    height: 500px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
 }
-
-.pyramidArea::before {
-  content: "";
-  position: absolute;
-  top: 0; left: -50px;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid red;
-  background-image: url('your-image-url');
-  background-size: cover;
+#pyramid{
+    justify-content: center;
+    align-items: center;
 }
-
-.pyramidArea::after {
-  content: "";
-  position: absolute;
-  top: 0; right: -50px;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid red;
-  background-image: url('your-image-url');
-  background-size: cover;
+#pyramid img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
+    height: 70px;
+    object-fit: contain;
 }
