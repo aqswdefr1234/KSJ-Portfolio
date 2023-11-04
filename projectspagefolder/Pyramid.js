@@ -1,6 +1,6 @@
 var pyramid = document.getElementById("pyramid");
 
-async function ReadPyramin()
+async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백이 줄마다 들어가 있다. 반드시 제거해야한다. 직접 txt파일을 수정해서 공백을 제거하는 것은 효과가 없다.
 {
     const response = await fetch("Pyramid.txt");
     const data = await response.text();
