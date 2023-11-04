@@ -1,21 +1,17 @@
 .pyramidArea{ /* " . " 는 클래스 속성을 정의하고 " # " 은 id 속성을 정의한다.*/
     display: flex;
     min-height: 300px;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
 .pyramidClass{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
 }
 .pyramidClass div{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     max-height: 60px;
