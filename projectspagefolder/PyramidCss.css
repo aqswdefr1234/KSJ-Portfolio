@@ -10,6 +10,6 @@
     align-items: center;
 }
 #pyramid img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
-    height: 50px;
+    height: 100px;
     object-fit: contain;
 }
