@@ -7,9 +7,15 @@
     align-items: center;
 }
 .pyramidClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .pyramidClass div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-height: 60px;
 }
