@@ -21,7 +21,7 @@ async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백
         var techString = floors[i].substring(floors[i].indexOf(":") + 1);//기술스택이름
         var tech = techString.split(",").map(s => s.trim());
         console.log(`tech의 길이 ${i}번째 : ${tech.length}`);
-        divString += `<div class="section">`;
+        divString += `<div>`;
         for(var z = 0; z < tech.length; z++)
         {
             console.log(`${tech[z]} : ${dict[tech[z]]}`);
