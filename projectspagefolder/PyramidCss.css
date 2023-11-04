@@ -7,6 +7,7 @@
     align-items: center;
 }
 .pyramidClass{
+    display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
