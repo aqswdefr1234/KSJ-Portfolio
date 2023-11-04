@@ -20,9 +20,9 @@
     max-height: 90px;
     height: 15%;
     margin-bottom: 5%;
+    padding: 0 10px;
 }
 .pyramidClass div img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
-    box-sizing: border-box;
     max-height: 70px;
     height: 100%;
     width: 100%;
