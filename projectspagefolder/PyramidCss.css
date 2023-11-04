@@ -22,6 +22,7 @@
 }
 .pyramidClass div img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
     height: 100%;
+    width: 100%;
     object-fit: contain;
     margin: 0 10px;
 }
