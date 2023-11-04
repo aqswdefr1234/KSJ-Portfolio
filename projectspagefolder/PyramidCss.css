@@ -7,13 +7,13 @@
     align-items: center;
 }
 .pyramidClass{
-    display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
 .pyramidClass div{
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
