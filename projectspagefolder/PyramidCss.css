@@ -7,13 +7,11 @@
     align-items: center;
 }
 .pyramidClass{
-    flex: 1;
+    width: 100%;
 }
 .pyramidClass div{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    max-height: 60px;
 }
 .pyramidClass div img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
     height: 70%;
