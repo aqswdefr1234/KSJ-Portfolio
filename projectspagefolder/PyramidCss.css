@@ -9,8 +9,13 @@
 .pyramidClass{
     flex: 1;
 }
-.pyramidClass img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
+.pyramidClass div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    height: 20%;
+}
+.pyramidClass img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
+    height: 70%;
     object-fit: contain;
 }
