@@ -1,14 +1,14 @@
-.pyramidArea{
+.pyramidArea{ /* " . " 는 클래스 속성을 정의하고 " # " 은 id 속성을 정의한다.*/
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
 }
-.pyramid{
+#pyramid{
     justify-content: center;
     align-items: center;
 }
-.pyramid img{
+#pyramid img{
     height: 50px;
     width: 50px;
 }
