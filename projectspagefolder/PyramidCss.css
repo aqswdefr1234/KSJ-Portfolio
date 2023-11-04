@@ -1,5 +1,4 @@
 .pyramidArea{ /* " . " 는 클래스 속성을 정의하고 " # " 은 id 속성을 정의한다.*/
-    display: flex;
     height: 500px;
     width: 90%;
     justify-content: center;
@@ -10,6 +9,6 @@
     align-items: center;
 }
 #pyramid img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
-    height: 100px;
+    height: 70px;
     object-fit: contain;
 }
