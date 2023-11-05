@@ -35,6 +35,8 @@
     padding: 0 10px;*/
 }
 .pyramidClass div div{/*하나의 이미지만을 감싸는 div*/
+    display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
 }
