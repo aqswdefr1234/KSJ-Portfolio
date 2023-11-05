@@ -22,7 +22,7 @@
     height: 100%;
     width: 100%;
 }
-.pyramidClass div{
+.pyramidClass div{/*이미지하나만을 감싸는 div의 부모 div. 여러개의 하위 div를 가지며 피라미드 층을 만들어내는 div */
     display: flex;
     flex-direction: row;
     /*flex: 1;*/
@@ -34,6 +34,12 @@
    /* margin-bottom: 20px;
     padding: 0 10px;*/
 }
-.pyramidClass div img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
+.pyramidClass div div{/*하나의 이미지만을 감싸는 div*/
+    align-items: center;
+    justify-content: center;
+}
+.pyramidClass div div img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
