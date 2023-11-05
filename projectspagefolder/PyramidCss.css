@@ -10,11 +10,12 @@
 .pyramidArea img{
     max-height: 450px;
     height: 100%; /* 높이를 브라우저 창에 맞게 100%로 설정 */
+    width: 30%;
     object-fit: contain;
 }
 .pyramidClass{
     display: flex;
-    flex-grow: 1; /* 추가된 코드 */
+    width: 70%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
