@@ -15,6 +15,7 @@
 }
 .pyramidClass{
     display: flex;
+    flex: flex 1;
     width: 70%;
     flex-direction: column;
     justify-content: center;
