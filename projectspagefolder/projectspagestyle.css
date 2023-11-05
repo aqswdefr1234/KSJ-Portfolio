@@ -17,7 +17,11 @@ h2{
     padding: 50px;
     text-align: center;
     color: rgb(201, 188, 70);
-    font-size: 70px;
+    font-size: 80px;
+}
+h3{
+    margin-left: 5%;
+    font-size: 60px;
 }
 .white-block-with-shadow {
     display: flex;
