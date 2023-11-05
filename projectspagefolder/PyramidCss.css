@@ -12,6 +12,7 @@
 }
 .pyramidClass{
     display: flex;
+    flex-grow: 1; /* 추가된 코드 */
     flex-direction: column;
     justify-content: center;
     align-items: center;
