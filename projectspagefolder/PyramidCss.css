@@ -25,8 +25,8 @@
     flex: 1;
     align-items: center;
     justify-content: center;
-    max-height: 90px;
-    height: 15%;
+    max-height: 50px;
+    object-fit: contain;
     margin-bottom: 20px;
     padding: 0 10px;
 }
