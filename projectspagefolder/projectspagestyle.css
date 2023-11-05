@@ -8,14 +8,16 @@ body{
 }
 
 h1 {
-    padding: 70px;
+    padding: 100px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 100px;
 }
 h2{
     padding: 50px;
     text-align: center;
     color: rgb(201, 188, 70);
+    font-size: 70px;
 }
 .white-block-with-shadow {
     display: flex;
