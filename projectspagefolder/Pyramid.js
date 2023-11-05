@@ -25,7 +25,9 @@ async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백
         for(var z = 0; z < tech.length; z++)
         {
             console.log(`${tech[z]} : ${dict[tech[z]]}`);
+            divString += "<div>";
             divString += dict[tech[z]];
+            divString += "</div>";
         }
         divString += `</div>`;
         
