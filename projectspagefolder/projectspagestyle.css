@@ -14,14 +14,14 @@ h1 {
     font-size: 100px;
 }
 h2{
-    padding: 50px;
+    padding: 30px;
     text-align: center;
     color: rgb(201, 188, 70);
     font-size: 80px;
 }
 h3{
     margin-left: 5%;
-    font-size: 60px;
+    font-size: 50px;
 }
 .white-block-with-shadow {
     display: flex;
