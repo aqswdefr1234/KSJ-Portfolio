@@ -7,7 +7,6 @@
     align-items: center;
 }
 .pyramidArea img{
-    display: block;
     max-height: 450px;
     height: 100%; /* 높이를 브라우저 창에 맞게 100%로 설정 */
     object-fit: contain;
