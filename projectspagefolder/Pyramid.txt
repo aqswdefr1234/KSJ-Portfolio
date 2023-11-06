@@ -1,4 +1,4 @@
-First:unity^^^Second:javascript,firebase^^^Third:html,css,netlify,python
+First:unity^^^Second:javascript,firebase^^^Third:html,css,netlify,python^^^Etc:blender
 python:<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 html:<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 css:<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
@@ -6,3 +6,4 @@ javascript:<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-th
 firebase:<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"/>
 unity:<img src="https://img.shields.io/badge/unity-000000?style=for-the-badge&logo=unity&logoColor=white"/>
 netlify:<img src="https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
+blender:<img src="https://img.shields.io/badge/blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white"/>
