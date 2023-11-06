@@ -9,7 +9,7 @@ function InsertDiv(dict, techArray, divString)
         divString += dict[techArray[z]];
         divString += "</div>";
     }
-    pyramidString += `</div>`;
+    divString += `</div>`;
 }
 async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백이 줄마다 들어가 있다. 반드시 제거해야한다. 직접 txt파일을 수정해서 공백을 제거하는 것은 효과가 없다.
 {
