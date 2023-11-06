@@ -1,15 +1,29 @@
 var pyramid = document.getElementById("pyramid");
 var etc = document.getElementById("etcSkills");
-function InsertDiv(dict, techArray, divString)
+function InsertDiv(dict, techArray, type)
 {
-    divString += `<div>`;
-    for(var z = 0; z < tech.length; z++)
+    var str = "";
+    if(type == 1)
     {
-        divString += "<div>";
-        divString += dict[techArray[z]];
-        divString += "</div>";
+        str += `<div>`;
+        for(var z = 0; z < tech.length; z++)
+        {
+            str += "<div>";
+            str += dict[techArray[z]];
+            str += "</div>";
+        }
+        str += `</div>`;
     }
-    divString += `</div>`;
+    else if(type == 2)//구별하는 이유는 감싸는 div 한층을 제거하기 위해서
+    {
+        for(var z = 0; z < tech.length; z++)
+        {
+            str += "<div>";
+            str += dict[techArray[z]];
+            str += "</div>";
+        }
+    }
+    return str;
 }
 async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백이 줄마다 들어가 있다. 반드시 제거해야한다. 직접 txt파일을 수정해서 공백을 제거하는 것은 효과가 없다.
 {
@@ -34,9 +48,15 @@ async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백
         var techString = floors[i].substring(floors[i].indexOf(":") + 1);//기술스택이름
         var tech = techString.split(",").map(s => s.trim());//배열의 요소의 문자열의 앞 뒤 공백 자르기
         if(i !== floors.length - 1)
-            InsertDiv(dict, tech, divString);
+        {
+            divString = InsertDiv(dict, tech, 1);//일반적인 경우 1
+        }
+            
         else
-            InsertDiv(dict, tech, etcString);
+        {
+            etcString = InsertDiv(dict, tech, 2);//etc일 경우 2
+        }
+            
         
     }
     console.log(dict);
