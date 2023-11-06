@@ -6,7 +6,7 @@ function InsertDiv(dict, techArray, type)
     if(type == 1)
     {
         str += `<div>`;
-        for(var z = 0; z < tech.length; z++)
+        for(var z = 0; z < techArray.length; z++)
         {
             str += "<div>";
             str += dict[techArray[z]];
