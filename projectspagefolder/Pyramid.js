@@ -1,5 +1,5 @@
 var pyramid = document.getElementById("pyramid");
-
+var etc = document.getElementById("etcSkills");
 async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백이 줄마다 들어가 있다. 반드시 제거해야한다. 직접 txt파일을 수정해서 공백을 제거하는 것은 효과가 없다.
 {
     const response = await fetch("Pyramid.txt");
@@ -13,7 +13,8 @@ async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백
     {
         var dictKey = lines[j].substring(0, lines[j].indexOf(":"));// : 전까지
         var dictValue = lines[j].substring(lines[j].indexOf(":") + 1);// : 후부터
-        dict[dictKey] = dictValue.replace(/\r/g, '').replace(/\n/g, '');
+        dict[dictKey] = dictValue;
+        //dict[dictKey] = dictValue.replace(/\r/g, '').replace(/\n/g, '');
         console.log(`${dictKey} : ${dict[dictKey]}`);
     }
     for(var i = 0; i < floors.length; i++)//층별로 쓰인 기술스택 이미지 주소찾기
