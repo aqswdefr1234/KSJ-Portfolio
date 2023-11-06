@@ -19,7 +19,7 @@ async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백
     for(var i = 0; i < floors.length; i++)//층별로 쓰인 기술스택 이미지 주소찾기
     {
         var techString = floors[i].substring(floors[i].indexOf(":") + 1);//기술스택이름
-        var tech = techString.split(",").map(s => s.trim());
+        var tech = techString.split(",").map(s => s.trim());//배열의 요소의 문자열의 앞 뒤 공백 자르기
         console.log(`tech의 길이 ${i}번째 : ${tech.length}`);
         divString += `<div>`;
         for(var z = 0; z < tech.length; z++)
