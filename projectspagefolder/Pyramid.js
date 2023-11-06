@@ -49,7 +49,7 @@ async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백
         var tech = techString.split(",").map(s => s.trim());//배열의 요소의 문자열의 앞 뒤 공백 자르기
         if(i !== floors.length - 1)
         {
-            divString = InsertDiv(dict, tech, 1);//일반적인 경우 1
+            pyramidString = InsertDiv(dict, tech, 1);//일반적인 경우 1
         }
             
         else
