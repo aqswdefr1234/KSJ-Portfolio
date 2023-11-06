@@ -20,7 +20,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
 }
 .pyramidClass div{/*이미지하나만을 감싸는 div의 부모 div. 여러개의 하위 div를 가지며 피라미드 층을 만들어내는 div */
     display: flex;
@@ -56,7 +55,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
 }
 .etcClass div{
     display: flex;
