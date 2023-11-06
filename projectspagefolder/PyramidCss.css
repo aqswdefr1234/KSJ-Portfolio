@@ -15,7 +15,7 @@
 }
 .pyramidClass{
     display: flex;
-    width: 50%;
+    width: 60%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@
 
 .etcClass{
     display: flex;
-    width: 20%;
+    width: 10%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
