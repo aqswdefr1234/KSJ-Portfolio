@@ -16,7 +16,7 @@ function InsertDiv(dict, techArray, type)
     }
     else if(type == 2)//구별하는 이유는 감싸는 div 한층을 제거하기 위해서
     {
-        str += "<h3>ETC</h3>"
+        str += "<h3>Other skills</h3>"
         for(var z = 0; z < techArray.length; z++)
         {
             str += "<div>";
