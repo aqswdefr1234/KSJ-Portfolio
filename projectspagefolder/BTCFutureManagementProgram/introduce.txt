@@ -1,9 +1,9 @@
-이 프로젝트는 비트코인의 여러지표들을 계산하여,
 BTC Future Notification앱 이용자들에게
-그들이 알림 받길 원하는 지표가 목표에 도달하면,
-각각의 휴대폰으로 알림 메시지를 보냅니다.
+그들이 설정한 지표에 따라 각각의
+휴대폰으로 알림 메시지를 보냅니다.
 
 주요기능
+-바이낸스 API 캔들 데이터 파싱 후 지표 계산
 -Firebase RealtimeDatabase 사용을 통한 FCM 토큰 수집
 -Netlify Functions(Serverless) 사용
 -http통신
