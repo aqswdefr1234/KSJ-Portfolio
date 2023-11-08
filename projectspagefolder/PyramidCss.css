@@ -71,7 +71,7 @@
     object-fit: contain;
 }
 .vertical-line {
-    border-left: 1% solid white;
+    border-left: 2px solid white;
     margin-left: 2%;
     margin-right: 2%;
     height: 90%;
