@@ -9,7 +9,6 @@ function InsertDiv(dict, techArray, type)
         for(var z = 0; z < techArray.length; z++)
         {
             str += "<div>";
-            str += "<h3>ETC</h3>"
             str += dict[techArray[z]];
             str += "</div>";
         }
@@ -20,6 +19,7 @@ function InsertDiv(dict, techArray, type)
         for(var z = 0; z < techArray.length; z++)
         {
             str += "<div>";
+            str += "<h3>ETC</h3>"
             str += dict[techArray[z]];
             str += "</div>";
         }
