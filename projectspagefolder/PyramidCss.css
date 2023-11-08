@@ -13,9 +13,9 @@
     width: 30%;
     object-fit: contain;
 }
-.pyramidClass{
+.pyramidClass{/*vertical-line가 5프로*/
     display: flex;
-    width: 60%;
+    width: 55%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -71,6 +71,8 @@
     object-fit: contain;
 }
 .vertical-line {
-  border-left: 2px solid white;
-  height: 90%;
+    border-left: 1% solid white;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 90%;
 }
