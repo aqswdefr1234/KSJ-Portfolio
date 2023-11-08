@@ -70,3 +70,7 @@
     height: 100%;
     object-fit: contain;
 }
+.vertical-line {
+  border-left: 1px solid black;
+  height: 90%;
+}
