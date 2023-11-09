@@ -5,7 +5,7 @@ function InsertDiv(dict, techArray, floorsCount, type)
     var str = "";
     var childCount = techArray.length;
     var childWidth = Math.floor(100/childCount);
-    var floorHeight = Math.floor(100/floorsCount);
+    var floorHeight = Math.floor(100/floorsCount - 1);//etc 층은 제외 해야하므로 -1
     if(type == 1)
     {
         str += `<div style="height:${floorHeight}%">`;
