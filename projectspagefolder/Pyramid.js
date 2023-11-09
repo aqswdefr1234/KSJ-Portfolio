@@ -1,13 +1,14 @@
 var pyramid = document.getElementById("pyramid");
 var etc = document.getElementById("etcSkills");
-function InsertDiv(dict, techArray, type)
+function InsertDiv(dict, techArray, floorsCount, type)
 {
     var str = "";
     var childCount = techArray.length;
     var childWidth = Math.floor(100/childCount);
+    var floorHeight = Math.floor(100/floorsCount);
     if(type == 1)
     {
-        str += `<div>`;
+        str += `<div style="height:${floorHeight}%">`;
         for(var z = 0; z < techArray.length; z++)
         {
             str += `<div style="width:${childWidth}%">`;
@@ -52,12 +53,12 @@ async function ReadPyramin()//txt파일에는 항상 줄바꿈 문자 및 공백
         var tech = techString.split(",").map(s => s.trim());//배열의 요소의 문자열의 앞 뒤 공백 자르기
         if(i !== floors.length - 1)
         {
-            pyramidString += InsertDiv(dict, tech, 1);//일반적인 경우 1
+            pyramidString += InsertDiv(dict, tech, floors.length, 1);//일반적인 경우 1
         }
             
         else
         {
-            etcString += InsertDiv(dict, tech, 2);//etc일 경우 2
+            etcString += InsertDiv(dict, tech, floors.length, 2);//etc일 경우 2
         }
             
         
