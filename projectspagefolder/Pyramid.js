@@ -3,12 +3,13 @@ var etc = document.getElementById("etcSkills");
 function InsertDiv(dict, techArray, type)
 {
     var str = "";
+    var childCount = techArray.length;
     if(type == 1)
     {
         str += `<div>`;
         for(var z = 0; z < techArray.length; z++)
         {
-            str += "<div>";
+            str += `<div style="width:${Math.round(100/childCount)}%">`;
             str += dict[techArray[z]];
             str += "</div>";
         }
