@@ -4,7 +4,7 @@ function InsertDiv(dict, techArray, type)
 {
     var str = "";
     var childCount = techArray.length;
-    var childWidth = Math.round(100/(childCount + 1));//마진 값을 넣어야 하므로 +1 한다
+    var childWidth = Math.floor(100/childCount);
     if(type == 1)
     {
         str += `<div>`;
