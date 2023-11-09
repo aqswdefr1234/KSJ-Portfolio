@@ -1,5 +1,5 @@
-BTCFutureNotification^^^Introduce.txt^^^GraphicPNG.png^^^GitHub:https://github.com/aqswdefr1234/BTCFutureNotification/tree/main^^^Languages:C#^^^Technologies:Unity,Firebase(Auth,Firestore,Realtime,Messaging),GoogleSignIn
-BTCFutureManagementProgram^^^introduce.txt^^^BTCFutureManagementProgram.png^^^GitHub:https://github.com/aqswdefr1234/BTCFutureManagementProgram^^^Languages:C#,JavaScript^^^Technologies:Unity,Firebase(Realtime,Admin),Netlify(Serverless)
-MetaShopClient^^^introduce.txt^^^MetaShopClient.png^^^GitHub:https://github.com/aqswdefr1234/MetaverseShopEditor,Tistory:https://unity-practice.tistory.com/25,Tistory:https://unity-practice.tistory.com/26^^^Languages:C#,JavaScript^^^Technologies:Unity,Firebase(Auth),Netlify(Serverless)
-BetWithFriendsFolder^^^introduce.txt^^^BetWithFriendsProject.png^^^GitHub:https://github.com/aqswdefr1234/BetWithFriends^^^Languages:C#^^^Technologies:Unity,Firebase(Auth,Realtime)
-CamticOffice^^^introduce.txt^^^CamticOffice.png^^^GitHub:https://github.com/aqswdefr1234/CamticOffice,Tistory:https://unity-practice.tistory.com/15,Tistory:https://unity-practice.tistory.com/10^^^Languages:C#^^^Technologies:Unity,UnityGamingServices(Multiplayer Relay)
+BTCFutureNotification^^^Introduce.txt^^^GraphicPNG.png^^^GitHub:https://github.com/aqswdefr1234/BTCFutureNotification/tree/main
+BTCFutureManagementProgram^^^introduce.txt^^^BTCFutureManagementProgram.png^^^GitHub:https://github.com/aqswdefr1234/BTCFutureManagementProgram
+MetaShopClient^^^introduce.txt^^^MetaShopClient.png^^^GitHub:https://github.com/aqswdefr1234/MetaverseShopEditor,Tistory:https://unity-practice.tistory.com/25,Tistory:https://unity-practice.tistory.com/26
+BetWithFriendsFolder^^^introduce.txt^^^BetWithFriendsProject.png^^^GitHub:https://github.com/aqswdefr1234/BetWithFriends
+CamticOffice^^^introduce.txt^^^CamticOffice.png^^^GitHub:https://github.com/aqswdefr1234/CamticOffice,Tistory:https://unity-practice.tistory.com/15,Tistory:https://unity-practice.tistory.com/10
