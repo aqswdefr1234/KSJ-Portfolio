@@ -4,14 +4,25 @@ function InsertDiv(dict, techArray, type)
 {
     var str = "";
     var childCount = techArray.length;
+    var childWidth = Math.round(100/(childCount + 1));//마진 값을 넣어야 하므로 +1 한다
+    var childMargin = Math.round(childWidth / (childCount - 1));//만약 객체가 4개 라면 사이 공간의 개수는 3개이므로 -1
     if(type == 1)
     {
         str += `<div>`;
         for(var z = 0; z < techArray.length; z++)
         {
-            str += `<div style="width:${Math.round(100/childCount)}%">`;
-            str += dict[techArray[z]];
-            str += "</div>";
+            if(z !== techArray.length - 1)//마지막 요소가 아닐 때
+            {
+                str += `<div style="width:${childWidth}% margin-right: ${childMargin}%">`;
+                str += dict[techArray[z]];
+                str += "</div>";
+            }//마지막 요소가 아닐 때margin-right: 20%
+            else
+            {
+                str += `<div style="width:${childWidth}%">`;
+                str += dict[techArray[z]];
+                str += "</div>";
+            }
         }
         str += `</div>`;
     }
