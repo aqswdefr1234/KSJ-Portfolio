@@ -31,7 +31,6 @@
 }
 .pyramidClass div div{/*하나의 이미지만을 감싸는 div*/
     display: flex;
-    width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
