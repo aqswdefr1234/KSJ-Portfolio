@@ -11,8 +11,9 @@ function InsertDiv(dict, techArray, floorsCount, type)
         str += `<div style="height:${floorHeight}%">`;
         for(var z = 0; z < techArray.length; z++)
         {
-            str += `<div style="width:${childWidth}%">`;
-            str += dict[techArray[z]];
+            var imageData = dict[techArray[z]].split(",");//index0 : <img>, 1 : 너비값
+            str += `<div style="width:${imageData[1]}%">`;
+            str += imageData[0];
             str += "</div>";
         }
         str += `</div>`;
