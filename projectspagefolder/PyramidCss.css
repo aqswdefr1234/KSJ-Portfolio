@@ -26,6 +26,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    object-fit: contain;
 }
 .pyramidClass div img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
     object-fit: contain;
@@ -49,7 +50,6 @@
     max-height: 60px;
     align-items: center;
     justify-content: center;
-    object-fit: contain;
 }
 .etcClass div img{
     width: 100%;
