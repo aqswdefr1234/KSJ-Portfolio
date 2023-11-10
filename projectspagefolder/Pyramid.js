@@ -8,8 +8,8 @@ function InsertDiv(dict, techArray, floorsCount, type)
     var floorHeight = Math.floor(100/floorsCount - 1);//etc 층은 제외 해야하므로 -1
     if(type == 1)
     {
-        var imageUrlArray;
-        var imageWidthArray;
+        var imageUrlArray = [];
+        var imageWidthArray = [];
         var widthAll = 0;
         str += `<div style="height:${floorHeight}%">`;
         for(var j = 0; j < techArray.length; j++)//가로길이의 상대 비율을 구하기 위해 요소들의 가로길이의 합을 구하기위해
