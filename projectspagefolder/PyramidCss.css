@@ -32,8 +32,8 @@
 .pyramidClass div div{/*하나의 이미지만을 감싸는 div*/
     display: flex;
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
 }
 .pyramidClass div div img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
     height: 100%;
