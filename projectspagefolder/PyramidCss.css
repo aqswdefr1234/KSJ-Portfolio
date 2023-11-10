@@ -26,12 +26,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /*width: 100%;*/
     object-fit: contain;
 }
 .pyramidClass div div{/*하나의 이미지만을 감싸는 div*/
     display: flex;
-    flex-grow: 0;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -40,7 +39,7 @@
 }
 .pyramidClass div div img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
     /*object-fit: contain;*/
-    height: 100%;
+    width: 100%;
 }
 
 
