@@ -24,7 +24,7 @@
 .pyramidClass div{/*이미지하나만을 감싸는 div의 부모 div. 여러개의 하위 div를 가지며 피라미드 층을 만들어내는 div */
     display: flex;
     flex-direction: row;
-    /*align-items: center;*/
+    align-items: center;
     /*justify-content: center;*/
     width: 100%;
     object-fit: contain;
@@ -32,9 +32,11 @@
 .pyramidClass div div{/*하나의 이미지만을 감싸는 div*/
     display: flex;
     flex-grow: 0;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     /*align-items: center;
     justify-content: center;*/
+    object-fit: contain;
 }
 .pyramidClass div div img{/*이미지의 원본은 세로 길이는 같지만 가로길이는 다르다.*/
     object-fit: contain;
