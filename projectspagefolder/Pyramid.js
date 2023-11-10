@@ -11,11 +11,9 @@ function InsertDiv(dict, techArray, floorsCount, type)
         str += `<div style="height:${floorHeight}%">`;
         for(var z = 0; z < techArray.length; z++)
         {
-            str += dict[techArray[z]];
-            /*
             str += `<div style="width:${childWidth}%">`;
             str += dict[techArray[z]];
-            str += "</div>";*/
+            str += "</div>";
         }
         str += `</div>`;
     }
