@@ -24,7 +24,6 @@
 .pyramidClass div{/*이미지하나만을 감싸는 div의 부모 div. 여러개의 하위 div를 가지며 피라미드 층을 만들어내는 div */
     display: flex;
     flex-direction: row;
-    flex: 1;/*new*/
     align-items: center;
     justify-content: center;
     /*width: 100%;*//*new*/
