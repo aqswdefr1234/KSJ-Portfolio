@@ -8,12 +8,24 @@ function InsertDiv(dict, techArray, floorsCount, type)
     var floorHeight = Math.floor(100/floorsCount - 1);//etc 층은 제외 해야하므로 -1
     if(type == 1)
     {
+        var imageUrlArray;
+        var imageWidthArray;
+        var widthAll = 0;
         str += `<div style="height:${floorHeight}%">`;
-        for(var z = 0; z < techArray.length; z++)
+        for(var j = 0; j < techArray.length; j++)//가로길이의 상대 비율을 구하기 위해 요소들의 가로길이의 합을 구하기위해
         {
-            var imageData = dict[techArray[z]].split(",");//index0 : <img>, 1 : 너비값
-            str += `<div style="width:${imageData[1]}%">`;
-            str += imageData[0];
+            var imageData = dict[techArray[j]].split(",").map(s => s.trim());//index0 : <img>, 1 : 너비값
+            imageUrlArray.push(imageData[0]);
+
+            var floatData = parseFloat(imageData[1]);
+            widthAll += parseFloat(floatData);
+            imageWidthArray.push(floatData);
+        }
+        for(var i = 0; i < techArray.length; i++)
+        {
+            if(i == 0)
+            str += `<div style="width:${Math.floor(imageWidthArray[i] / widthAll)}%">`;//원본이미지 가로 길이에 비례하여 퍼센트로 변환한다.
+            str += imageUrlArray[i];
             str += "</div>";
         }
         str += `</div>`;
