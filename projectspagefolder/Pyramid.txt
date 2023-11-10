@@ -1,12 +1,12 @@
 First:unity^^^Second:javascript,firebase,netlify^^^Third:html,css,python,raspberrypi^^^Etc:blender,catia,inventor
-python:<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white&logoWidth=40"/>
-html:<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white&logoWidth=40"/>
-css:<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white&logoWidth=40"/>
-javascript:<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&logoWidth=40"/>
-firebase:<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white&logoWidth=40"/>
-unity:<img src="https://img.shields.io/badge/unity-000000?style=for-the-badge&logo=unity&logoColor=white&logoWidth=40"/>
-netlify:<img src="https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white&logoWidth=40"/>
+python:<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+html:<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+css:<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+javascript:<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+firebase:<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"/>
+unity:<img src="https://img.shields.io/badge/unity-000000?style=for-the-badge&logo=unity&logoColor=white"/>
+netlify:<img src="https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
 blender:<img src="https://img.shields.io/badge/blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white"/>
 catia:<img src="/projectspagefolder/SourceImage/CatiaImage.png"/>
 inventor:<img src="/projectspagefolder/SourceImage/InventorImage.png"/>
-raspberrypi:<img src="https://img.shields.io/badge/raspberrypi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white&logoWidth=40"/>
+raspberrypi:<img src="https://img.shields.io/badge/raspberrypi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white"/>
