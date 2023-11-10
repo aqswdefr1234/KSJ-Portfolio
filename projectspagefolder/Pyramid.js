@@ -23,7 +23,6 @@ function InsertDiv(dict, techArray, floorsCount, type)
         }
         for(var i = 0; i < techArray.length; i++)
         {
-            if(i == 0)
             str += `<div style="width:${Math.floor(imageWidthArray[i] / widthAll)}%">`;//원본이미지 가로 길이에 비례하여 퍼센트로 변환한다.
             str += imageUrlArray[i];
             str += "</div>";
