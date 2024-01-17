@@ -10,4 +10,4 @@ raspberrypi:<img src="https://img.shields.io/badge/raspberrypi-A22846?style=for-
 blender:<img src="https://img.shields.io/badge/blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white"/>
 catia:<img src="/projectspagefolder/SourceImage/CatiaImage.png"/>
 inventor:<img src="/projectspagefolder/SourceImage/InventorImage.png"/>
-c#:<img src="https://img.shields.io/badge/csharp-512BD4?style=for-the-badge&logo=csharp&logoColor=white"/>,97.5
+c#:<img src="https://img.shields.io/badge/csharp-512BD4?style=for-the-badge&logo=csharp&logoColor=white"/>,96.5
