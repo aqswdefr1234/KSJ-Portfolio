@@ -3,10 +3,10 @@ python:<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&
 html:<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>,88.25
 css:<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>,68.75
 javascript:<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>,126.5
-firebase:<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"/>,109
+firebase:<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"/>
 unity:<img src="https://img.shields.io/badge/unity-000000?style=for-the-badge&logo=unity&logoColor=white"/>,86.25
-netlify:<img src="https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>,99.75
-raspberrypi:<img src="https://img.shields.io/badge/raspberrypi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white"/>,137.75
+netlify:<img src="https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
+raspberrypi:<img src="https://img.shields.io/badge/raspberrypi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white"/>
 blender:<img src="https://img.shields.io/badge/blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white"/>
 catia:<img src="/projectspagefolder/SourceImage/CatiaImage.png"/>
 inventor:<img src="/projectspagefolder/SourceImage/InventorImage.png"/>
