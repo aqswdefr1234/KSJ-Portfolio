@@ -7,3 +7,4 @@ BTC Future Notification앱 이용자들에게
 -Firebase RealtimeDatabase 사용을 통한 FCM 토큰 수집
 -Netlify Functions(Serverless) 사용
 -http통신
+-Unity, C#
