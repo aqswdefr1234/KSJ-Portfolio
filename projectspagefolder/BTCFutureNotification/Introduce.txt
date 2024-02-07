@@ -6,4 +6,4 @@
 -Firebase Firestore 사용을 통한 유저 데이터 관리
 -Firebase Messaging을 이용한 백그라운드 메시지 전송
 -Firebase Auth와 Oauth를 이용한 이메일 로그인 및 Google 소셜 로그인
--Unity, C#
+-Unity, C#, JS
