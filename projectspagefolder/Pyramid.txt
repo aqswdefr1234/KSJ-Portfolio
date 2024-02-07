@@ -1,4 +1,4 @@
-First:unity,c#^^^Second:javascript,python^^^Third:html,css^^^Etc:firebase,netlify,raspberrypi
+First:unity,c#^^^Second:javascript,python^^^Etc:firebase,netlify,raspberrypi
 python:<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>,97.5
 html:<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>,88.25
 css:<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>,68.75
