@@ -1,5 +1,6 @@
 var pyramid = document.getElementById("pyramid");
 var etc = document.getElementById("etcSkills");
+var maxWidth = 0;
 function InsertDiv(dict, techArray, floorsCount, type)
 {
     var str = "";
@@ -21,10 +22,11 @@ function InsertDiv(dict, techArray, floorsCount, type)
             widthAll += parseFloat(floatData);
             imageWidthArray.push(floatData);
         }
+        if(maxWidth < widthAll) maxWidth = widthAll;
         for(var i = 0; i < techArray.length; i++)
         {
             //str += `<div style="width:${Math.floor(imageWidthArray[i] / widthAll * 100)}%">`;//원본이미지 가로 길이에 비례하여 퍼센트로 변환한다.
-            str += `<div style="width:${(imageWidthArray[i] / widthAll * 100)}%">`;
+            str += `<div style="width:${(imageWidthArray[i] / maxWidth * 100)}%">`;
             str += imageUrlArray[i];
             str += "</div>";
         }
