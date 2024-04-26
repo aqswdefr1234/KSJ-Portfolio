@@ -1,3 +1,4 @@
+MetaverseShopPlatform^^^MetaverseShopPlatform.txt^^^MetaverseShop.png^^^Youtube:https://www.youtube.com/watch?v=5B7ew5lkppo
 WebSocketChat^^^Introduce.txt^^^TCP_Socket.png^^^GitHub:https://github.com/aqswdefr1234/TCP-IP_Mulitiplay/tree/main
 RuntimeLightmapChange^^^introduce.txt^^^RuntimeLightmap.png^^^GitHub:https://github.com/aqswdefr1234/LightmapDataAnalysis
 MetaShopClient^^^introduce.txt^^^MetaShopClient.png^^^GitHub:https://github.com/aqswdefr1234/MetaverseShopEditor,Tistory:https://unity-practice.tistory.com/25,Tistory:https://unity-practice.tistory.com/26
