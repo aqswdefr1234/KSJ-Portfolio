@@ -1,4 +1,4 @@
-MetaverseShopPlatform^^^MetaverseShopPlatform.txt^^^MetaverseShop.png^^^YouTube:https://www.youtube.com/watch?v=ccPWTVOgUVM
+MetaverseShopPlatform^^^MetaverseShopPlatform.txt^^^MetaverseShop.png^^^YouTube:https://www.youtube.com/watch?v=ccPWTVOgUVM,GitHub:https://github.com/aqswdefr1234/MetaShopPlatform
 ImageAI^^^introduce.txt^^^output.png^^^GitHub:https://github.com/aqswdefr1234/ImagesAI,Tistory:https://unity-practice.tistory.com/54,YouTube:https://youtu.be/BRIlgJJdf3c
 WebSocketChat^^^Introduce.txt^^^TCP_Socket.png^^^GitHub:https://github.com/aqswdefr1234/TCP-IP_Mulitiplay/tree/main
 RuntimeLightmapChange^^^introduce.txt^^^RuntimeLightmap.png^^^GitHub:https://github.com/aqswdefr1234/LightmapDataAnalysis
