@@ -1,5 +1,5 @@
 LuckCalculation^^^introduce.txt^^^GraphicImage.png^^^GitHub:https://github.com/aqswdefr1234/LuckCalculation,GooglePlayStore:https://play.google.com/store/apps/details?id=com.KSJ.LuckCalculator
-TimeC^^^introduce.txt^^^PortImage.png^^^GitHub:https:https://github.com/aqswdefr1234/TimeC,GooglePlayStore:https://play.google.com/store/apps/details?id=com.KSJ.TimeC
+TimeC^^^introduce.txt^^^PortImage.png^^^GitHub:https://github.com/aqswdefr1234/TimeC,GooglePlayStore:https://play.google.com/store/apps/details?id=com.KSJ.TimeC
 MetaverseShopPlatform^^^MetaverseShopPlatform.txt^^^MetaverseShop.png^^^YouTube:https://www.youtube.com/watch?v=ccPWTVOgUVM,GitHub:https://github.com/aqswdefr1234/MetaShopPlatform
 ImageAI^^^introduce.txt^^^output.png^^^GitHub:https://github.com/aqswdefr1234/ImagesAI,Tistory:https://unity-practice.tistory.com/54,YouTube:https://youtu.be/BRIlgJJdf3c
 WebSocketChat^^^Introduce.txt^^^TCP_Socket.png^^^GitHub:https://github.com/aqswdefr1234/TCP-IP_Mulitiplay/tree/main
