@@ -1,4 +1,4 @@
-NewsWebPages^^^introduce.txt^^^NewsWebPages.png^^^GitHub:https://github.com/aqswdefr1234/news
+NewsWebPages^^^introduce.txt^^^NewsWebPages.png^^^GitHub:https://github.com/aqswdefr1234/news,WebPages:https://www.ksj-coin-data.kro.kr
 LuckCalculation^^^introduce.txt^^^GraphicImage.png^^^GitHub:https://github.com/aqswdefr1234/LuckCalculation,GooglePlayStore:https://play.google.com/store/apps/details?id=com.KSJ.LuckCalculator
 TimeC^^^introduce.txt^^^PortImage.png^^^GitHub:https://github.com/aqswdefr1234/TimeC,GooglePlayStore:https://play.google.com/store/apps/details?id=com.KSJ.TimeC
 MetaverseShopPlatform^^^MetaverseShopPlatform.txt^^^MetaverseShop.png^^^YouTube:https://www.youtube.com/watch?v=ccPWTVOgUVM,GitHub:https://github.com/aqswdefr1234/MetaShopPlatform
