@@ -1,4 +1,4 @@
-CoinAI^^^introduce.txt^^^coinai.png^^^WebPages:https://drive.google.com/drive/folders/1AwxuXnKxWNCmk13tGoB6mBoyghF9KR-0?usp=sharing
+CoinAI^^^introduce.txt^^^coinai.png^^^YouTube:https://youtu.be/hLBeZFW_kTo,WebPages:https://drive.google.com/drive/folders/1AwxuXnKxWNCmk13tGoB6mBoyghF9KR-0?usp=sharing
 NewsWebPages^^^introduce.txt^^^NewsWebPages.png^^^GitHub:https://github.com/aqswdefr1234/news,WebPages:https://www.ksj-coin-data.kro.kr
 LuckCalculation^^^introduce.txt^^^GraphicImage.png^^^GitHub:https://github.com/aqswdefr1234/LuckCalculation,GooglePlayStore:https://play.google.com/store/apps/details?id=com.KSJ.LuckCalculator
 TimeC^^^introduce.txt^^^PortImage.png^^^GitHub:https://github.com/aqswdefr1234/TimeC,GooglePlayStore:https://play.google.com/store/apps/details?id=com.KSJ.TimeC
